@@ -1,0 +1,12 @@
+$primary: #c98860;
+$danger: #ff4136;
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+$font-family-base: "Montserrat", sans-serif;
+
+@import "sign-in.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
