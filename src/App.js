@@ -1,11 +1,6 @@
-import { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
@@ -30,6 +25,7 @@ function App() {
           <AboutUs />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

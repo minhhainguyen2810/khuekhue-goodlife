@@ -1,11 +1,10 @@
-import Footer from "../Footer";
 import Header from "../Header";
 
 const AboutUs = () => {
   return (
     <>
-      <div className="header__about-us">
-        <Header />
+      <div className="header header__about-us">
+        <Header className="text-white" />
 
         <div className="position-relative overflow-hidden p-3 p-md-5 text-center text-white">
           <div className="p-lg-5 mx-auto my-5">
@@ -17,8 +16,6 @@ const AboutUs = () => {
           <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

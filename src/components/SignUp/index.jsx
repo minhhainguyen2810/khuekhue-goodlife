@@ -1,10 +1,7 @@
-import logo from "../../logo.svg";
-
 const SignUp = () => {
   return (
     <main className="form-signin">
       <form>
-        <img className="mb-4" src={logo} alt="" width="72" height="57" />
         <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
         <label htmlFor="inputEmail" className="visually-hidden">
           Email address

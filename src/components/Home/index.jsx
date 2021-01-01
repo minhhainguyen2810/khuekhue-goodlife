@@ -1,4 +1,3 @@
-import Footer from "../Footer";
 import Header from "../Header";
 
 const Home = () => {
@@ -17,8 +16,6 @@ const Home = () => {
           <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

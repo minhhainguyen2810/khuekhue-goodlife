@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 const Header = ({ className }) => {
   return (
-    <nav className={classNames("site-header sticky-top ", className)}>
+    <nav className={classNames("site-header", className)}>
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
           <Link to="/home" className="">
@@ -20,7 +20,7 @@ const Header = ({ className }) => {
           <img src="images/logo.png" alt="" />
         </Link>
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
-          <Link to="/home" className=" d-md-inline-block">
+          <Link to="/about-us" className=" d-md-inline-block">
             About Us
           </Link>
           <Link to="/home" className=" d-md-inline-block">
