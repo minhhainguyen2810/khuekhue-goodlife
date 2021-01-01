@@ -1,12 +1,11 @@
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
-  Link,
-  useRouteMatch,
-  useParams,
+  useLocation,
 } from "react-router-dom";
+import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
@@ -15,6 +14,9 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path={["/sign-in", "/"]}>
+          <SignIn />
+        </Route>
         <Route path="/sign-in">
           <SignIn />
         </Route>
@@ -23,6 +25,9 @@ function App() {
         </Route>
         <Route path="/home">
           <Home />
+        </Route>
+        <Route path="/about-us">
+          <AboutUs />
         </Route>
       </Switch>
     </Router>

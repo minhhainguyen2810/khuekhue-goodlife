@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 #root {
   width: 100%;
   height: 100%;
@@ -51,11 +52,48 @@ body {
   width: 100%;
   height: 100%;
   background: url("images/top-view-zero-waste-arrangement-wooden-background 1.png");
+  background-size: cover;
 }
 .wrapper .title {
   font-size: 36px;
   font-weight: 600;
   line-height: 44px;
+}
+
+footer {
+  background: #c98860;
+  padding-bottom: 1rem;
+  padding-top: 57px;
+}
+footer a {
+  color: white;
+}
+
+.header {
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+.header__about-us {
+  background: url("images/aboutus/MaskGroup.jpg");
+  background-size: cover;
+  height: 700px;
+}
+.header__about-us a {
+  color: white;
+}
+
+.intro {
+  font-size: 2.25rem;
+}
+
+.divider__home {
+  width: 80px;
+  height: 1px;
+  border-top: 1px solid white;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-bottom: 68px;
 }
 
 /*!
@@ -265,7 +303,7 @@ sup {
 
 a {
   color: #c98860;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #a16d4d;
@@ -2892,7 +2930,6 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: #212529;
   text-align: center;
-  text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
@@ -3363,7 +3400,7 @@ textarea.form-control-lg {
 .btn-link {
   font-weight: 400;
   color: #c98860;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .btn-link:hover {
   color: #a16d4d;
@@ -3625,7 +3662,6 @@ textarea.form-control-lg {
   font-weight: 400;
   color: #212529;
   text-align: inherit;
-  text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
@@ -3800,7 +3836,6 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3898,7 +3933,6 @@ textarea.form-control-lg {
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
-  text-decoration: none;
   white-space: nowrap;
 }
 .navbar-nav {
@@ -4454,7 +4488,6 @@ textarea.form-control-lg {
   position: relative;
   display: block;
   color: #c98860;
-  text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4726,7 +4759,6 @@ textarea.form-control-lg {
   position: relative;
   display: block;
   padding: 0.5rem 1rem;
-  text-decoration: none;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
