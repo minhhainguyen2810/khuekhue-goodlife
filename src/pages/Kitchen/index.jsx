@@ -1,6 +1,7 @@
 import { NavLink, Route, Switch, useRouteMatch } from "react-router-dom";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import ListProducts from "../../components/ListProducts";
 
 const Kitchen = () => {
   let { path, url } = useRouteMatch();
@@ -148,7 +149,12 @@ const Kitchen = () => {
           </div>
           <div className="col-9 products-section">
             <Switch>
-              <Route path={`${path}/:topicId`}></Route>
+              <Route exact path={path}>
+                <ListProducts />
+              </Route>
+              <Route path={`${path}/:topicId`}>
+                <ListProducts />
+              </Route>
             </Switch>
           </div>
         </div>
