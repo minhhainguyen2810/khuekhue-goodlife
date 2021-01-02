@@ -6,7 +6,7 @@ const SignUp = () => {
     <div className="wrapper">
       <main className="col form-signin">
         <form>
-          <h1 className="title">SIGN IN</h1>
+          <h1 className="title">SIGN UP</h1>
           <p>
             Already have an account?&nbsp;
             <Link to="/sign-in" className="link-primary text-decoration-none">
