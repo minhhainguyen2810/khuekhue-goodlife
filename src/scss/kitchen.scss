@@ -1,0 +1,19 @@
+.kitchen-container {
+  margin-top: 36px;
+  ul {
+    li {
+      list-style-type: none;
+      a {
+        color: $secondary;
+        font-size: 18px;
+        display: block;
+        &.active {
+          border-right: 3px solid $primary;
+        }
+      }
+    }
+  }
+  .filter-by-title {
+    margin-top: 50px;
+  }
+}

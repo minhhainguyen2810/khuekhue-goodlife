@@ -26,170 +26,16 @@ label {
 .btn.btn-primary {
   color: white;
 }
+.btn.btn-primary:hover {
+  color: white;
+}
 
 .text-dark {
   color: #3e3e3e !important;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
-  background: url("images/top-view-zero-waste-arrangement-wooden-background 1.png");
-  background-size: cover;
-  padding-top: 96px;
-}
-.wrapper .form-signin {
-  width: 100%;
-  max-width: 653px !important;
-  padding: 56px 85px !important;
-  border-radius: 10px;
-  margin: auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: white;
-}
-.wrapper .form-signin button[type=submit] {
-  width: 180px;
-  height: 55px;
-}
-.wrapper .form-signin .title {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 44px;
-}
-.wrapper .form-signin .checkbox {
-  font-weight: 400;
-}
-.wrapper .form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  font-size: 16px;
-}
-.wrapper .form-signin .form-control:focus {
-  z-index: 2;
-}
-.wrapper .form-signin .input[type=email] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  outline: none;
-}
-.wrapper .form-signin .input[type=email]:focus {
-  outline: none;
-}
-.wrapper .form-signin .social-btn {
-  margin-top: 40px;
-}
-.wrapper .form-signin .social-btn button {
-  text-transform: uppercase;
-  padding: 1rem;
-  height: 60px;
-}
-.wrapper .form-signin .social-btn button.facebook {
-  background-color: #3b5998;
-}
-.wrapper .form-signin .social-btn button.google {
-  background-color: #dc4e41;
-}
-
-@media (min-width: 1320px) {
-  .wrapper .form-signin {
-    margin-left: 50%;
-  }
-}
-footer {
-  background: #c98860;
-  padding-bottom: 1rem;
-  padding-top: 57px;
-}
-footer a {
-  color: white;
-}
-footer h5, footer .h5 {
-  text-transform: uppercase;
-}
-
-.header {
-  padding-top: 25px;
-  text-transform: uppercase;
-}
-.header__about-us {
-  background: url("images/about-us/MaskGroup.jpg");
-  background-size: cover;
-  height: 700px;
-}
-.header__about-us a {
-  color: white;
-}
-.header .active {
-  color: #c98860;
-  border-bottom: 1px solid currentColor;
-}
-
-.intro {
-  font-size: 2.25rem;
-}
-
-.divider {
-  width: 80px;
-  height: 1px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 22px;
-  margin-bottom: 68px;
-}
-.divider__white {
-  border-top: 1px solid white;
-}
-.divider__dark {
-  border-top: 1px solid #3e3e3e;
-}
-
-.divider-with-text {
-  margin-top: 50px;
-  margin-bottom: 36px;
-}
-.divider-with-text .divider-line {
-  height: 1px;
-  width: 100%;
-  border-top: 1px solid #5c5c5c;
-}
-.divider-with-text .divider-text {
-  color: #5c5c5c;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  width: fit-content;
-  height: 30px;
-  position: relative;
-  top: -12px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.about-us-container {
-  margin-top: 66px;
-}
-.about-us-container .we-like-title {
-  margin-top: 100px;
-}
-.about-us-container img {
-  width: 100%;
-}
-.about-us-container .bottom-img {
-  margin-bottom: 172px;
-}
-.about-us-container .our-story-p {
-  margin-bottom: 50px;
-  max-width: 735px;
-  margin-left: auto;
-  margin-right: auto;
+.fs-18 {
+  font-size: 1.125rem;
 }
 
 /*!
@@ -10805,6 +10651,194 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: url("images/top-view-zero-waste-arrangement-wooden-background 1.png");
+  background-size: cover;
+  padding-top: 96px;
+}
+.wrapper .form-signin {
+  width: 100%;
+  max-width: 653px !important;
+  padding: 56px 85px !important;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+.wrapper .form-signin button[type=submit] {
+  width: 180px;
+  height: 55px;
+}
+.wrapper .form-signin .title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+.wrapper .form-signin .checkbox {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.wrapper .form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  font-size: 16px;
+}
+.wrapper .form-signin .form-control:focus {
+  z-index: 2;
+}
+.wrapper .form-signin .input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  outline: none;
+}
+.wrapper .form-signin .input[type=email]:focus {
+  outline: none;
+}
+.wrapper .form-signin .social-btn {
+  margin-top: 40px;
+}
+.wrapper .form-signin .social-btn button {
+  text-transform: uppercase;
+  padding: 1rem;
+  height: 60px;
+}
+.wrapper .form-signin .social-btn button.facebook {
+  background-color: #3b5998;
+}
+.wrapper .form-signin .social-btn button.google {
+  background-color: #dc4e41;
+}
+
+@media (min-width: 1320px) {
+  .wrapper .form-signin {
+    margin-left: 50%;
+  }
+}
+footer {
+  background: #c98860;
+  padding-bottom: 1rem;
+  padding-top: 57px;
+}
+footer a {
+  color: white;
+}
+footer h5, footer .h5 {
+  text-transform: uppercase;
+}
+
+.header {
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+.header__about-us {
+  background: url("images/about-us/MaskGroup.jpg");
+  background-size: cover;
+  height: 700px;
+}
+.header__about-us a {
+  color: white;
+}
+.header__kitchen {
+  background: url("images/kitchen/Mask Group.png");
+  background-size: cover;
+  height: 655px;
+  color: #5c5c5c;
+}
+.header__kitchen a {
+  color: #5c5c5c;
+}
+.header .active {
+  color: #c98860;
+  border-bottom: 1px solid currentColor;
+}
+
+.intro {
+  font-size: 2.25rem;
+}
+
+.divider {
+  width: 80px;
+  height: 1px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-bottom: 68px;
+}
+.divider__white {
+  border-top: 1px solid white;
+}
+.divider__dark {
+  border-top: 1px solid #3e3e3e;
+}
+
+.divider-with-text {
+  margin-top: 50px;
+  margin-bottom: 36px;
+}
+.divider-with-text .divider-line {
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid #5c5c5c;
+}
+.divider-with-text .divider-text {
+  color: #5c5c5c;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: fit-content;
+  height: 30px;
+  position: relative;
+  top: -12px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about-us-container {
+  margin-top: 66px;
+}
+.about-us-container .we-like-title {
+  margin-top: 100px;
+}
+.about-us-container img {
+  width: 100%;
+}
+.about-us-container .bottom-img {
+  margin-bottom: 172px;
+}
+.about-us-container .our-story-p {
+  margin-bottom: 50px;
+  max-width: 735px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kitchen-container {
+  margin-top: 36px;
+}
+.kitchen-container ul li {
+  list-style-type: none;
+}
+.kitchen-container ul li a {
+  color: #5c5c5c;
+  font-size: 18px;
+  display: block;
+}
+.kitchen-container ul li a.active {
+  border-right: 3px solid #c98860;
+}
+.kitchen-container .filter-by-title {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

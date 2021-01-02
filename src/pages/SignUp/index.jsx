@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import Divider from "../Divider";
+import Divider from "../../components/Divider";
 
-const SignIn = () => {
+const SignUp = () => {
   return (
     <div className="wrapper">
       <main className="col form-signin">
         <form>
-          <h1 className="title">SIGN IN</h1>
+          <h1 className="title">SIGN UP</h1>
           <p>
-            New user?&nbsp;
-            <Link to="/sign-up" className="link-primary text-decoration-none">
-              Create an account
+            Already have an account?&nbsp;
+            <Link to="/sign-in" className="link-primary text-decoration-none">
+              Sign in.
             </Link>
           </p>
           <div className="social-btn row gx-1">
@@ -77,18 +77,17 @@ const SignIn = () => {
             className="form-control border-bot"
             required=""
           />
-          <div className="checkbox mb-3 d-flex justify-content-between">
-            <label>
-              <input type="checkbox" value="remember-me" /> Remember me
-            </label>
-            <Link to="/sign-up" className="link-secondary">
-              <span>Forgot your password?</span>
-            </Link>
-          </div>
+          <label htmlFor="inputPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            className="form-control border-bot"
+            required=""
+          />
           <div className="text-center">
             <Link to="/home">
               <button className="btn btn-lg btn-primary" type="submit">
-                SIGN IN
+                SIGN UP
               </button>
             </Link>
           </div>
@@ -98,4 +97,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;

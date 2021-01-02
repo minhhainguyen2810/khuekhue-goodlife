@@ -1,9 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
-import classNames from "classnames";
 
-const Header = ({ className }) => {
+const Header = () => {
   return (
-    <nav className={classNames("site-header", className)}>
+    <nav className="site-header">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
           <NavLink activeClassName="active" to="/bathroom" className="">

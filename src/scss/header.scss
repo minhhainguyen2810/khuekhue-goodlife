@@ -9,6 +9,15 @@
       color: white;
     }
   }
+  &__kitchen {
+    background: url("images/kitchen/Mask Group.png");
+    background-size: cover;
+    height: 655px;
+    a {
+      color: $secondary;
+    }
+    color: $secondary;
+  }
   .active {
     color: $primary;
     border-bottom: 1px solid currentColor;
