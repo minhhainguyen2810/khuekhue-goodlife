@@ -2,11 +2,15 @@
   padding-top: 25px;
   text-transform: uppercase;
   &__about-us {
-    background: url("images/aboutus/MaskGroup.jpg");
+    background: url("images/about-us/MaskGroup.jpg");
     background-size: cover;
     height: 700px;
     a {
       color: white;
     }
+  }
+  .active {
+    color: $primary;
+    border-bottom: 1px solid currentColor;
   }
 }

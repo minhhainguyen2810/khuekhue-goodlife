@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import classNames from "classnames";
 
 const Header = ({ className }) => {
@@ -6,26 +6,42 @@ const Header = ({ className }) => {
     <nav className={classNames("site-header", className)}>
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
-          <Link to="/home" className="">
+          <NavLink activeClassName="active" to="/bathroom" className="">
             Bathroom
-          </Link>
-          <Link to="/home" className=" d-md-inline-block">
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            to="/kitchen"
+            className=" d-md-inline-block"
+          >
             Kitchen
-          </Link>
-          <Link to="/home" className=" d-md-inline-block">
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            to="/travel"
+            className=" d-md-inline-block"
+          >
             For travel
-          </Link>
+          </NavLink>
         </div>
         <Link to="/home" className=" d-md-inline-block">
           <img src="images/logo.png" alt="" />
         </Link>
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
-          <Link to="/about-us" className=" d-md-inline-block">
+          <NavLink
+            activeClassName="active"
+            to="/about-us"
+            className=" d-md-inline-block"
+          >
             About Us
-          </Link>
-          <Link to="/home" className=" d-md-inline-block">
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            to="/blog"
+            className=" d-md-inline-block"
+          >
             Blog
-          </Link>
+          </NavLink>
           <div>
             <svg
               role="button"

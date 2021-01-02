@@ -11,46 +11,70 @@ body {
 //   background-color: #f5f5f5;
 // }
 
-.form-signin {
-  width: 100%;
-  max-width: 653px !important;
-  padding: 56px 85px !important;
-  margin: auto;
-  border-radius: 10px;
-  background: white;
-  margin-top: 96px !important;
-}
-.form-signin .checkbox {
-  font-weight: 400;
-}
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
 .wrapper {
   width: 100%;
   height: 100%;
   background: url("images/top-view-zero-waste-arrangement-wooden-background 1.png");
   background-size: cover;
-  .title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 44px;
+  padding-top: 96px;
+  .form-signin {
+    width: 100%;
+    max-width: 653px !important;
+    padding: 56px 85px !important;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: white;
+    button[type="submit"] {
+      width: 180px;
+      height: 55px;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+    }
+    .checkbox {
+      font-weight: 400;
+    }
+    .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      font-size: 16px;
+    }
+    .form-control:focus {
+      z-index: 2;
+    }
+    .input[type="email"] {
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      outline: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .social-btn {
+      margin-top: 40px;
+      button {
+        text-transform: uppercase;
+        padding: 1rem;
+        height: 60px;
+        &.facebook {
+          background-color: #3b5998;
+        }
+        &.google {
+          background-color: #dc4e41;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1320px) {
+  .wrapper {
+    .form-signin {
+      margin-left: 50%;
+    }
   }
 }

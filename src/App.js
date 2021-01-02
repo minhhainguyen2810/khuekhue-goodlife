@@ -24,8 +24,19 @@ function App() {
         <Route path="/about-us">
           <AboutUs />
         </Route>
+        <Route path="/bathroom">
+          <AboutUs />
+        </Route>
+        <Route path="/kitchen">
+          <AboutUs />
+        </Route>
+        <Route path="/travel">
+          <AboutUs />
+        </Route>
+        <Route path="/blog">
+          <AboutUs />
+        </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 }

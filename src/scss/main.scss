@@ -1,5 +1,7 @@
 $primary: #c98860;
 $danger: #ff4136;
+$gray-600: #5c5c5c;
+$dark: #3e3e3e;
 
 #root {
   width: 100%;
@@ -10,10 +12,39 @@ $link-decoration: none;
 
 $font-family-base: "Montserrat", sans-serif;
 
+input,
+input:focus {
+  &.border-bot {
+    outline: none;
+    box-shadow: none;
+    padding-left: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+}
+
+.form-control.border-bot {
+  margin-bottom: 16px;
+}
+
+label {
+  color: $gray-600;
+}
+
+.btn.btn-primary {
+  color: white;
+}
+
+.text-dark {
+  color: $dark !important;
+}
+
 @import "sign-in.scss";
 @import "footer.scss";
 @import "header.scss";
 @import "home.scss";
+@import "about-us.scss";
 
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../../node_modules/bootstrap/scss/bootstrap";
