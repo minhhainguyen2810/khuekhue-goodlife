@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ListProducts from "../../components/ListProducts";
 import classNames from "classnames";
+import DropdownList from "../../components/DropdownList";
 
 const Kitchen = () => {
   const [filter, setFilter] = useState(0);
@@ -13,8 +14,8 @@ const Kitchen = () => {
         <Header />
       </div>
       <div className="container kitchen-container">
-        <div className="row">
-          <div className="col-3 filter-section">
+        <div className="row gx-5">
+          <div className="col-xs-12 col-md-3 filter-section">
             <h4 className="text-primary fw-bold">KITCHEN</h4>
             <ul className="list-group">
               <li>
@@ -95,7 +96,7 @@ const Kitchen = () => {
                 id="r4"
               />
               <label className="form-check-label" htmlFor="r4">
-                50$-70$
+                50$ - 70$
               </label>
             </div>
             <div className="form-check">
@@ -106,7 +107,7 @@ const Kitchen = () => {
                 id="r5"
               />
               <label className="form-check-label" htmlFor="r5">
-                70$-100$
+                70$ - 100$
               </label>
             </div>
             <div className="form-check">
@@ -166,7 +167,10 @@ const Kitchen = () => {
               </label>
             </div>
           </div>
-          <div className="col-9 products-section">
+          <div className="col-xs-12 col-md-9 products-section">
+            <div className="mb-4 text-light">
+              <DropdownList />
+            </div>
             <ListProducts />
           </div>
         </div>

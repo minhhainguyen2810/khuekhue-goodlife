@@ -1,50 +1,73 @@
+import Pagination from "../Pagination";
+
 const ListProducts = () => {
   const products = [
     {
       imgSrc: "images/kitchen/image 1.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-1.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-2.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-3.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-4.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-5.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-6.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-7.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
     {
       imgSrc: "images/kitchen/image 1-8.png",
-      description: "images/kitchen/image 1.png",
+      title: "images/kitchen/image 1.png",
+      category: "Kitchen | Reduce",
+      price: "$20",
     },
   ];
   return (
-    <div className="list-products row">
+    <div className="list-products row gy-5">
       {products.map((item, index) => (
-        <div className="item col-4" key={index}>
-          <img src={item.imgSrc} alt={item.description} />
-          <p>{item.description}</p>
+        <div className="item col-xxl-4 col-xs-12 col-lg-6" key={index}>
+          <img className="text-center" src={item.imgSrc} alt={item.title} />
+          <p className="mt-2 fs-14 text-light">{item.category}</p>
+          <h6 className="mt-3 text-dark fs-18 ">{item.title}</h6>
+          <h6 className="mt-1 text-dark fs-18 ">{item.price}</h6>
         </div>
       ))}
+      <Pagination />
     </div>
   );
 };

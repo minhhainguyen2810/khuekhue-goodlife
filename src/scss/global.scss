@@ -2,6 +2,7 @@ $primary: #c98860;
 $danger: #ff4136;
 $gray-600: #5c5c5c;
 $dark: #3e3e3e;
+$light: #999999;
 
 #root {
   width: 100%;
@@ -46,4 +47,34 @@ label {
 
 .fs-18 {
   font-size: 1.125rem;
+}
+
+.fs-14 {
+  font-size: 0.875rem;
+}
+
+.text-light {
+  color: #999999 !important;
+}
+
+.dropdown {
+  button:focus {
+    box-shadow: none;
+  }
+  .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #c98860;
+  }
+}
+
+.pagination {
+  .page-link:focus,
+  .page-link:hover {
+    box-shadow: none;
+    background: none;
+  }
+  .active {
+    color: $primary;
+  }
 }

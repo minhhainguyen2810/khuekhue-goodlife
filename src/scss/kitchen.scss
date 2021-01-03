@@ -1,5 +1,6 @@
 .kitchen-container {
   margin-top: 36px;
+  margin-bottom: 120px;
   ul {
     li {
       list-style-type: none;
@@ -16,4 +17,12 @@
   .filter-by-title {
     margin-top: 50px;
   }
+  .list-group {
+    max-width: 225px;
+  }
+  // @include media-breakpoint-up(xxl) {
+  //   .filter-section {
+  //     padding-right: 60px;
+  //   }
+  // }
 }
