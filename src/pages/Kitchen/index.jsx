@@ -1,10 +1,11 @@
-import { NavLink, Route, Switch, useRouteMatch } from "react-router-dom";
+import { useState } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ListProducts from "../../components/ListProducts";
+import classNames from "classnames";
 
 const Kitchen = () => {
-  let { path, url } = useRouteMatch();
+  const [filter, setFilter] = useState(0);
 
   return (
     <>
@@ -16,20 +17,38 @@ const Kitchen = () => {
           <div className="col-3 filter-section">
             <h4 className="text-primary fw-bold">KITCHEN</h4>
             <ul className="list-group">
-              <li className="">
-                <NavLink exact to={`${url}`}>
+              <li>
+                <a
+                  role="button"
+                  className={classNames("link-secondary", {
+                    active: filter === 0,
+                  })}
+                  onClick={() => setFilter(0)}
+                >
                   All (37)
-                </NavLink>
+                </a>
               </li>
-              <li className="">
-                <NavLink to={`${url}/reduce-product`}>
+              <li>
+                <a
+                  role="button"
+                  className={classNames("link-secondary", {
+                    active: filter === 1,
+                  })}
+                  onClick={() => setFilter(1)}
+                >
                   Reduce Products (30)
-                </NavLink>
+                </a>
               </li>
-              <li className="">
-                <NavLink to={`${url}/refill-product`}>
+              <li>
+                <a
+                  role="button"
+                  className={classNames("link-secondary", {
+                    active: filter === 2,
+                  })}
+                  onClick={() => setFilter(2)}
+                >
                   Refill Products (7)
-                </NavLink>
+                </a>
               </li>
             </ul>
 
@@ -148,14 +167,7 @@ const Kitchen = () => {
             </div>
           </div>
           <div className="col-9 products-section">
-            <Switch>
-              <Route exact path={path}>
-                <ListProducts />
-              </Route>
-              <Route path={`${path}/:topicId`}>
-                <ListProducts />
-              </Route>
-            </Switch>
+            <ListProducts />
           </div>
         </div>
       </div>
