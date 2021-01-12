@@ -6,18 +6,18 @@ import classNames from "classnames";
 import DropdownList from "../../components/DropdownList";
 import kitchenProducts from "../../list-products/kitchen.json";
 
-const Kitchen = () => {
+const Bathroom = () => {
   const [filter, setFilter] = useState(0);
 
   return (
     <>
-      <div className="header header__kitchen">
+      <div className="header header__bathroom">
         <Header logoDark />
       </div>
       <div className="container kitchen-container">
         <div className="row gx-5">
           <div className="col-xs-12 col-md-3 filter-section">
-            <h4 className="text-primary fw-bold">KITCHEN</h4>
+            <h4 className="text-primary fw-bold">Bathroom</h4>
             <ul className="list-group">
               <li>
                 <a
@@ -181,4 +181,4 @@ const Kitchen = () => {
   );
 };
 
-export default Kitchen;
+export default Bathroom;

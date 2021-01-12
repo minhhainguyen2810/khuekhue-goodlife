@@ -6,7 +6,7 @@ import classNames from "classnames";
 import DropdownList from "../../components/DropdownList";
 import kitchenProducts from "../../list-products/kitchen.json";
 
-const Kitchen = () => {
+const Profile = () => {
   const [filter, setFilter] = useState(0);
 
   return (
@@ -172,7 +172,7 @@ const Kitchen = () => {
             <div className="mb-4 text-light">
               <DropdownList />
             </div>
-            <ListProducts products={kitchenProducts} col4 />
+            <ListProducts products={kitchenProducts} />
           </div>
         </div>
       </div>
@@ -181,4 +181,4 @@ const Kitchen = () => {
   );
 };
 
-export default Kitchen;
+export default Profile;
