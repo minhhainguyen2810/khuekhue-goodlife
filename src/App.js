@@ -3,8 +3,11 @@ import AboutUs from "./pages/AboutUs";
 import Bathroom from "./pages/Bathroom";
 import Blogs from "./pages/Blogs";
 import Blog1 from "./pages/Blogs/Blog1";
+import Cart from "./pages/Cart";
 import Home from "./pages/Home";
+import Information from "./pages/Information";
 import Kitchen from "./pages/Kitchen";
+import Payment from "./pages/Payment";
 import ProductDetail from "./pages/ProductDetail";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
@@ -46,14 +49,23 @@ function App() {
         <Route path="/blog1">
           <Blog1 />
         </Route>
-        <Route path="/profile">
-          <Profile />
-        </Route>
         <Route path="/search">
           <Search />
         </Route>
         <Route path="/product-detail">
           <ProductDetail />
+        </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
+        <Route path="/cart">
+          <Cart />
+        </Route>
+        <Route path="/information">
+          <Information />
+        </Route>
+        <Route path="/payment">
+          <Payment />
         </Route>
       </Switch>
     </Router>
