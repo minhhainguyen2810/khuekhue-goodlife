@@ -29,7 +29,9 @@ const Header = ({ logoDark }) => {
         </div>
         <Link to="/home" className="fs-14 d-md-inline-block">
           <img
-            src={logoDark ? "images/logo-dark.png" : "images/logo.png"}
+            src={
+              logoDark ? "images/logo/LOGO color.svg" : "images/logo/LOGO.svg"
+            }
             alt="good-life"
           />
         </Link>
