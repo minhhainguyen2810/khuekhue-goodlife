@@ -1,11 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ logoDark }) => {
   return (
     <nav className="site-header">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
-          <NavLink activeClassName="active" to="/bathroom" className="d-md-inline-block fs-14">
+          <NavLink
+            activeClassName="active"
+            to="/bathroom"
+            className="d-md-inline-block fs-14"
+          >
             Bathroom
           </NavLink>
           <NavLink
@@ -23,8 +27,11 @@ const Header = () => {
             For travel
           </NavLink>
         </div>
-        <Link to="/home" className="d-md-inline-block fs-14">
-          <img src="images/logo.png" alt="" />
+        <Link to="/home" className="fs-14 d-md-inline-block">
+          <img
+            src={logoDark ? "images/logo-dark.png" : "images/logo.png"}
+            alt="good-life"
+          />
         </Link>
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
           <NavLink
@@ -42,22 +49,25 @@ const Header = () => {
             Blog
           </NavLink>
           <div>
-            <svg
-              width="21"
-              height="22"
-              viewBox="0 0 21 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="me-3"
-            >
-              <path
-                d="M14.6595 15.505L19.9995 21M17.2895 9.05C17.2895 13.4959 13.6429 17.1 9.14452 17.1C4.64616 17.1 0.999512 13.4959 0.999512 9.05C0.999512 4.6041 4.64616 1 9.14452 1C13.6429 1 17.2895 4.6041 17.2895 9.05Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-              />
-            </svg>
+            <Link to="/search">
+              <svg
+                width="21"
+                height="22"
+                viewBox="0 0 21 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="me-3"
+                role="button"
+              >
+                <path
+                  d="M14.6595 15.505L19.9995 21M17.2895 9.05C17.2895 13.4959 13.6429 17.1 9.14452 17.1C4.64616 17.1 0.999512 13.4959 0.999512 9.05C0.999512 4.6041 4.64616 1 9.14452 1C13.6429 1 17.2895 4.6041 17.2895 9.05Z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </Link>
             <svg
               width="22"
               height="22"

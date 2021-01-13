@@ -46,6 +46,10 @@ label {
   color: #999999 !important;
 }
 
+.text-grey-3 {
+  color: #828282 !important;
+}
+
 .dropdown button:focus {
   box-shadow: none;
 }
@@ -10783,6 +10787,30 @@ footer h5, footer .h5 {
 .header__kitchen a {
   color: #5c5c5c;
 }
+.header__bathroom {
+  background: url("images/bathroom/1.png");
+  background-size: cover;
+  height: 655px;
+  color: #5c5c5c;
+}
+.header__bathroom a {
+  color: #5c5c5c;
+}
+.header__travel {
+  background: url("images/travelkit/Mask Group.png");
+  background-size: cover;
+  height: 655px;
+  color: #5c5c5c;
+}
+.header__travel a {
+  color: #5c5c5c;
+}
+.header__search {
+  color: #5c5c5c;
+}
+.header__search a {
+  color: #5c5c5c;
+}
 .header .active {
   color: #c98860;
   border-bottom: 1px solid currentColor;
@@ -10805,6 +10833,9 @@ footer h5, footer .h5 {
 }
 .divider__dark {
   border-top: 1px solid #3e3e3e;
+}
+.divider__secondary {
+  border-top: 1px solid #5c5c5c;
 }
 
 .divider-with-text {
@@ -10869,6 +10900,51 @@ footer h5, footer .h5 {
 }
 .kitchen-container .list-group {
   max-width: 225px;
+}
+
+.product-detail-container {
+  margin-top: 96px;
+  margin-bottom: 120px;
+}
+.product-detail-container .stars {
+  width: 130px;
+}
+.product-detail-container .buy-group {
+  margin-top: 30px;
+}
+.product-detail-container .buy-group button {
+  width: 250px;
+}
+.product-detail-container .buy-group button:first-child {
+  margin-right: 10px;
+}
+.product-detail-container .social-btn {
+  margin-top: 40px;
+  display: inline-block;
+}
+.product-detail-container .social-btn button {
+  height: 30px;
+}
+.product-detail-container .social-btn button.facebook {
+  background-color: #3b5998;
+}
+.product-detail-container .social-btn button.google {
+  background-color: #dc4e41;
+}
+.product-detail-container .section-2 {
+  margin-top: 90px;
+}
+.product-detail-container .section-2 .nav-link {
+  color: #3e3e3e;
+}
+.product-detail-container .section-2 .nav-link.active {
+  color: #c98860;
+}
+.product-detail-container .section-3 {
+  margin-top: 90px;
+}
+.product-detail-container .section-3 .other-products img {
+  width: 310px;
 }
 
 /*# sourceMappingURL=main.css.map */

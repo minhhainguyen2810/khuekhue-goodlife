@@ -4,20 +4,20 @@ import Header from "../../components/Header";
 import ListProducts from "../../components/ListProducts";
 import classNames from "classnames";
 import DropdownList from "../../components/DropdownList";
-import kitchenProducts from "../../list-products/kitchen.json";
+import travelProducts from "../../list-products/travel.json";
 
-const Kitchen = () => {
+const Travel = () => {
   const [filter, setFilter] = useState(0);
 
   return (
     <>
-      <div className="header header__kitchen">
+      <div className="header header__travel">
         <Header logoDark />
       </div>
       <div className="container kitchen-container">
         <div className="row gx-5">
           <div className="col-xs-12 col-md-3 filter-section">
-            <h4 className="text-primary fw-bold">KITCHEN</h4>
+            <h4 className="text-primary fw-bold">Travel</h4>
             <ul className="list-group">
               <li>
                 <a
@@ -172,7 +172,7 @@ const Kitchen = () => {
             <div className="mb-4 text-light">
               <DropdownList />
             </div>
-            <ListProducts products={kitchenProducts} col4 />
+            <ListProducts products={travelProducts} col4 />
           </div>
         </div>
       </div>
@@ -181,4 +181,4 @@ const Kitchen = () => {
   );
 };
 
-export default Kitchen;
+export default Travel;

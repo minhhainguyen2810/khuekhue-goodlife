@@ -18,6 +18,30 @@
     }
     color: $secondary;
   }
+  &__bathroom {
+    background: url("images/bathroom/1.png");
+    background-size: cover;
+    height: 655px;
+    a {
+      color: $secondary;
+    }
+    color: $secondary;
+  }
+  &__travel {
+    background: url("images/travelkit/Mask Group.png");
+    background-size: cover;
+    height: 655px;
+    a {
+      color: $secondary;
+    }
+    color: $secondary;
+  }
+  &__search {
+    a {
+      color: $secondary;
+    }
+    color: $secondary;
+  }
   .active {
     color: $primary;
     border-bottom: 1px solid currentColor;

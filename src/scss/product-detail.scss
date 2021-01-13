@@ -1,0 +1,46 @@
+.product-detail-container {
+  margin-top: 96px;
+  margin-bottom: 120px;
+  .stars {
+    width: 130px;
+  }
+  .buy-group {
+    margin-top: 30px;
+    button {
+      width: 250px;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .social-btn {
+    margin-top: 40px;
+    display: inline-block;
+    button {
+      height: 30px;
+      &.facebook {
+        background-color: #3b5998;
+      }
+      &.google {
+        background-color: #dc4e41;
+      }
+    }
+  }
+  .section-2 {
+    margin-top: 90px;
+    .nav-link {
+      color: $dark;
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+  .section-3 {
+    margin-top: 90px;
+    .other-products {
+      img {
+        width: 310px;
+      }
+    }
+  }
+}
