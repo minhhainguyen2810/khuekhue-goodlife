@@ -29,10 +29,9 @@ const Header = ({ logoDark }) => {
         </div>
         <Link to="/home" className="fs-14 d-md-inline-block">
           <img
-            src={
-              logoDark ? "images/logo/LOGO color.svg" : "images/logo/LOGO.svg"
-            }
+            src={logoDark ? "images/logo-dark.png" : "images/logo.png"}
             alt="good-life"
+            width={203}
           />
         </Link>
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
