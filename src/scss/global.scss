@@ -15,7 +15,9 @@ $link-decoration: none;
 $font-family-base: "Montserrat", sans-serif;
 
 input,
-input:focus {
+input:focus,
+select,
+select:focus {
   &.border-bot {
     outline: none;
     box-shadow: none;
@@ -82,4 +84,8 @@ label {
   .active {
     color: $primary;
   }
+}
+
+input::placeholder {
+  font-size: 0.8125rem;
 }

@@ -1,0 +1,15 @@
+.cart-container {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  .your-cart {
+    margin-bottom: 70px;
+  }
+  tfoot {
+    tr {
+      td {
+        border-bottom: none;
+      }
+      height: 100px;
+    }
+  }
+}

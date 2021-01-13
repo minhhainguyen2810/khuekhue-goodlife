@@ -1,0 +1,23 @@
+[
+  {
+    "imgSrc": "images/kitchen/image 1.png",
+    "title": "Nice kitchen stuff",
+    "category": "Kitchen | Reduce",
+    "price": "$20.00",
+    "quantity": 3
+  },
+  {
+    "imgSrc": "images/kitchen/image 1-1.png",
+    "title": "Nice kitchen stuff",
+    "category": "Kitchen | Reduce",
+    "price": "$10.00",
+    "quantity": 2
+  },
+  {
+    "imgSrc": "images/kitchen/image 1-2.png",
+    "title": "Nice kitchen stuff",
+    "category": "Kitchen | Reduce",
+    "price": "$25.00",
+    "quantity": 1
+  }
+]
