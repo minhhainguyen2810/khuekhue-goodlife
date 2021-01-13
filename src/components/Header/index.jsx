@@ -5,39 +5,39 @@ const Header = () => {
     <nav className="site-header">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
-          <NavLink activeClassName="active" to="/bathroom" className="">
+          <NavLink activeClassName="active" to="/bathroom" className="d-md-inline-block fs-14">
             Bathroom
           </NavLink>
           <NavLink
             activeClassName="active"
             to="/kitchen"
-            className=" d-md-inline-block"
+            className="d-md-inline-block fs-14"
           >
             Kitchen
           </NavLink>
           <NavLink
             activeClassName="active"
             to="/travel"
-            className=" d-md-inline-block"
+            className="d-md-inline-block fs-14"
           >
             For travel
           </NavLink>
         </div>
-        <Link to="/home" className=" d-md-inline-block">
+        <Link to="/home" className="d-md-inline-block fs-14">
           <img src="images/logo.png" alt="" />
         </Link>
         <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
           <NavLink
             activeClassName="active"
             to="/about-us"
-            className=" d-md-inline-block"
+            className="d-md-inline-block fs-14"
           >
             About Us
           </NavLink>
           <NavLink
             activeClassName="active"
             to="/blog"
-            className=" d-md-inline-block"
+            className="d-md-inline-block fs-14"
           >
             Blog
           </NavLink>
