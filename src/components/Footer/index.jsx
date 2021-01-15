@@ -22,17 +22,17 @@ const Footer = () => {
             <ul className="list-unstyled text-small">
               <li>
                 <Link to="/home" className="">
-                  Cool stuff
+                  Team
                 </Link>
               </li>
               <li>
                 <Link to="/home" className="">
-                  Random feature
+                  Contact
                 </Link>
               </li>
               <li>
                 <Link to="/home" className="">
-                  Team feature
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -42,17 +42,17 @@ const Footer = () => {
             <ul className="list-unstyled text-small">
               <li>
                 <Link to="/home" className="">
-                  Resource
+                  Bathroom
                 </Link>
               </li>
               <li>
                 <Link to="/home" className="">
-                  Resource name
+                  Kitchen
                 </Link>
               </li>
               <li>
                 <Link to="/home" className="">
-                  Another resource
+                  Travel
                 </Link>
               </li>
             </ul>
@@ -62,17 +62,17 @@ const Footer = () => {
             <ul className="list-unstyled text-small">
               <li>
                 <Link to="/home" className="">
-                  Business
+                  Feedback
                 </Link>
               </li>
               <li>
                 <Link to="/home" className="">
-                  Education
+                  Care
                 </Link>
               </li>
               <li>
                 <Link to="/home" className="">
-                  Government
+                  Store
                 </Link>
               </li>
             </ul>
