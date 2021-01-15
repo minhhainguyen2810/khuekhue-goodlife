@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import ListProducts from "../../components/ListProducts";
 import classNames from "classnames";
 import DropdownList from "../../components/DropdownList";
-import kitchenProducts from "../../list-products/kitchen.json";
+import kitchenProducts from "../../list-products/bathroom.json";
 
 const Bathroom = () => {
   const [filter, setFilter] = useState(0);
@@ -17,7 +17,7 @@ const Bathroom = () => {
       <div className="container kitchen-container">
         <div className="row gx-5">
           <div className="col-xs-12 col-md-3 filter-section">
-            <h4 className="text-primary fw-bold">Bathroom</h4>
+            <h4 className="text-primary fw-bold">BATHROOM</h4>
             <ul className="list-group">
               <li>
                 <a

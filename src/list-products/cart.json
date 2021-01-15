@@ -1,23 +1,23 @@
 [
   {
-    "imgSrc": "images/kitchen/image 1.png",
-    "title": "Nice kitchen stuff",
+    "imgSrc": "images/cart/image 6.jpg",
+    "title": "DRY FACE BRUSH",
     "category": "Kitchen | Reduce",
-    "price": "$20.00",
+    "price": "$18.00",
     "quantity": 3
   },
   {
-    "imgSrc": "images/kitchen/image 1-1.png",
-    "title": "Nice kitchen stuff",
+    "imgSrc": "images/cart/image 1.jpg",
+    "title": "TABLE BRUSH SET IN BEECH",
     "category": "Kitchen | Reduce",
-    "price": "$10.00",
+    "price": "$32.00",
     "quantity": 2
   },
   {
-    "imgSrc": "images/kitchen/image 1-2.png",
-    "title": "Nice kitchen stuff",
+    "imgSrc": "images/cart/image 7.jpg",
+    "title": "ZERO WASTE LUNCH KIT",
     "category": "Kitchen | Reduce",
-    "price": "$25.00",
+    "price": "$30.00",
     "quantity": 1
   }
 ]
