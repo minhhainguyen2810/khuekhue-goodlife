@@ -42,6 +42,20 @@
     }
     color: $secondary;
   }
+  &__home {
+    background-color: #efcead;
+    height: 788px;
+    position: relative;
+    .home-text {
+      margin-left: 277px;
+      margin-top: 187px;
+      position: relative;
+    }
+    .banner {
+      position: absolute;
+      right: 0;
+    }
+  }
   .active {
     color: $primary;
     border-bottom: 1px solid currentColor;
