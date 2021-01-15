@@ -10817,6 +10817,20 @@ footer h5, footer .h5 {
 .header__search a {
   color: #5c5c5c;
 }
+.header__home {
+  background-color: #efcead;
+  height: 788px;
+  position: relative;
+}
+.header__home .home-text {
+  margin-left: 277px;
+  margin-top: 187px;
+  position: relative;
+}
+.header__home .banner {
+  position: absolute;
+  right: 0;
+}
 .header .active {
   color: #c98860;
   border-bottom: 1px solid currentColor;
@@ -10865,6 +10879,25 @@ footer h5, footer .h5 {
   top: -12px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.home-container {
+  margin-top: 66px;
+  position: relative;
+  overflow-x: hidden;
+}
+.home-container .home-img {
+  left: 0;
+}
+.home-container .help-container {
+  width: 768px;
+  margin-left: -560px;
+}
+.home-container .our-blogs-title {
+  margin-top: 150px;
+}
+.home-container img:focus {
+  outline: none;
 }
 
 .about-us-container {

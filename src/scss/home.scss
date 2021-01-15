@@ -40,3 +40,23 @@
     padding-right: 30px;
   }
 }
+.home-container {
+  margin-top: 66px;
+  position: relative;
+  .home-img {
+    left: 0;
+  }
+  .help-container {
+    width: 768px;
+    margin-left: -560px;
+  }
+  .our-blogs-title {
+    margin-top: 150px;
+  }
+  img {
+    &:focus {
+      outline: none;
+    }
+  }
+  overflow-x: hidden;
+}
