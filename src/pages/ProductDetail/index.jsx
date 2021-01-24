@@ -118,7 +118,7 @@ const ProductDetail = () => {
             <Counter className="fs-4 fw-bold mx-3" />
             <div className="buy-group">
               <button className="btn btn-lg btn-outline-primary">
-                BUY NOW
+                ADD TO CART
               </button>
               <Link to="/home">
                 <button className="btn btn-lg btn-primary">BUY NOW</button>

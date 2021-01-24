@@ -1,10 +1,94 @@
-import { Link, NavLink } from "react-router-dom";
+import { useRef, useState } from "react";
+import { Link, NavLink, useHistory } from "react-router-dom";
+import classNames from "classnames";
+
+export function reducer(state, action) {
+  switch (action.type) {
+    case "toggleSearch":
+      return { search: !state.search };
+    default:
+      throw new Error();
+  }
+}
 
 const Header = ({ logoDark }) => {
+  const [isSearch, setSearch] = useState(false);
+  const inputRef = useRef(null);
+
+  const handleOpenSearch = () => {
+    setSearch(true);
+    setTimeout(() => {
+      if (inputRef.current) inputRef.current.focus();
+    }, 1000);
+  };
+
+  const history = useHistory();
+
   return (
     <nav className="site-header">
-      <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
+      <div
+        className={classNames(
+          "container d-flex flex-column flex-md-row justify-content-between align-items-center",
+          { "is-search": isSearch }
+        )}
+      >
+        <div
+          className={
+            "container d-flex flex-column flex-md-row justify-content-around align-items-center position-relative"
+          }
+        >
+          <div className={classNames("search-bar", { "is-search": isSearch })}>
+            <div className="search-span">
+              <svg
+                width="21"
+                height="22"
+                viewBox="0 0 21 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="me-3"
+              >
+                <path
+                  d="M14.6595 15.505L19.9995 21M17.2895 9.05C17.2895 13.4959 13.6429 17.1 9.14452 17.1C4.64616 17.1 0.999512 13.4959 0.999512 9.05C0.999512 4.6041 4.64616 1 9.14452 1C13.6429 1 17.2895 4.6041 17.2895 9.05Z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
+            <form onSubmit={() => history.push("/search")}>
+              <input
+                type="text"
+                className="border-bot"
+                id="search"
+                placeholder="Search Goodlife"
+                ref={inputRef}
+                autoFocus
+                autoComplete="off"
+              />
+            </form>
+            <span onClick={() => setSearch(false)}>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="button"
+              >
+                <path
+                  d="M6.43407 6.4682C6.79465 6.10558 7.38091 6.10393 7.74353 6.4645L12.5031 11.1972L17.2626 6.4645C17.6252 6.10393 18.2115 6.10558 18.572 6.4682C18.9326 6.83081 18.9309 7.41707 18.5683 7.77765L13.8162 12.503L18.5683 17.2284C18.9309 17.589 18.9326 18.1752 18.572 18.5378C18.2115 18.9005 17.6252 18.9021 17.2626 18.5415L12.5031 13.8088L7.74353 18.5415C7.38091 18.9021 6.79465 18.9005 6.43407 18.5378C6.0735 18.1752 6.07515 17.589 6.43777 17.2284L11.1899 12.503L6.43777 7.77765C6.07515 7.41707 6.0735 6.83081 6.43407 6.4682Z"
+                  fill="#999999"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5ZM12.5 1.85185C6.61919 1.85185 1.85185 6.61919 1.85185 12.5C1.85185 18.3808 6.61919 23.1481 12.5 23.1481C18.3808 23.1481 23.1481 18.3808 23.1481 12.5C23.1481 6.61919 18.3808 1.85185 12.5 1.85185Z"
+                  fill="#999999"
+                />
+              </svg>
+            </span>
+          </div>
           <NavLink
             activeClassName="active"
             to="/bathroom"
@@ -50,7 +134,7 @@ const Header = ({ logoDark }) => {
             Blog
           </NavLink>
           <div>
-            <Link to="/search">
+            <button className="link" onClick={handleOpenSearch}>
               <svg
                 width="21"
                 height="22"
@@ -58,7 +142,6 @@ const Header = ({ logoDark }) => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="me-3"
-                role="button"
               >
                 <path
                   d="M14.6595 15.505L19.9995 21M17.2895 9.05C17.2895 13.4959 13.6429 17.1 9.14452 17.1C4.64616 17.1 0.999512 13.4959 0.999512 9.05C0.999512 4.6041 4.64616 1 9.14452 1C13.6429 1 17.2895 4.6041 17.2895 9.05Z"
@@ -68,37 +151,39 @@ const Header = ({ logoDark }) => {
                   strokeLinecap="round"
                 />
               </svg>
+            </button>
+            <Link to="/account">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="mx-3"
+              >
+                <path
+                  d="M20.0536 17.1895C20.0536 14.0317 15.7906 11.4739 10.5273 11.4739C5.264 11.4739 1.00098 14.0317 1.00098 17.1895"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M10.6464 11.4787C13.54 11.4787 15.8858 9.13295 15.8858 6.23934C15.8858 3.34573 13.54 1 10.6464 1C7.75269 1 5.4069 3.34573 5.4069 6.23934C5.4069 9.13295 7.75269 11.4787 10.6464 11.4787Z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M20.0536 17.1895V20.3189C20.0536 20.5999 19.9583 21 19.6821 21H1.61066C1.33916 21 1.00098 20.5904 1.00098 20.3189V17.1895"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                />
+              </svg>
             </Link>
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-3"
-            >
-              <path
-                d="M20.0536 17.1895C20.0536 14.0317 15.7906 11.4739 10.5273 11.4739C5.264 11.4739 1.00098 14.0317 1.00098 17.1895"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-              />
-              <path
-                d="M10.6464 11.4787C13.54 11.4787 15.8858 9.13295 15.8858 6.23934C15.8858 3.34573 13.54 1 10.6464 1C7.75269 1 5.4069 3.34573 5.4069 6.23934C5.4069 9.13295 7.75269 11.4787 10.6464 11.4787Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-              />
-              <path
-                d="M20.0536 17.1895V20.3189C20.0536 20.5999 19.9583 21 19.6821 21H1.61066C1.33916 21 1.00098 20.5904 1.00098 20.3189V17.1895"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-              />
-            </svg>
 
             <Link to="/cart">
               <svg

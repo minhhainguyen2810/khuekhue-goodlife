@@ -1,5 +1,6 @@
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
+import Account from "./pages/Account";
 import Bathroom from "./pages/Bathroom";
 import Blogs from "./pages/Blogs";
 import Blog1 from "./pages/Blogs/Blog1";
@@ -66,6 +67,9 @@ function App() {
         </Route>
         <Route path="/payment">
           <Payment />
+        </Route>
+        <Route path="/account">
+          <Account />
         </Route>
       </Switch>
     </Router>
