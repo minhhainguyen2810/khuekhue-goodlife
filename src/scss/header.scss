@@ -1,6 +1,10 @@
 .header {
   padding-top: 25px;
   text-transform: uppercase;
+  .logo {
+    position: absolute;
+    left: calc(50% - 101px);
+  }
   a,
   button.link {
     transition: opacity 1s, visibility 1s;
