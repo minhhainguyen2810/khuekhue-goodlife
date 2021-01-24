@@ -128,7 +128,7 @@ const ProductRefill = () => {
               <button className="btn btn-lg btn-outline-primary">
                 ADD TO CART
               </button>
-              <Link to="/home">
+              <Link to="/cart">
                 <button className="btn btn-lg btn-primary">BUY NOW</button>
               </Link>
             </div>

@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import kitchenProducts from "../../list-products/kitchen.json";
+import { ProductItem } from "../../components/ProductItem";
 
 const Home = () => {
   const sliderSettings = {
@@ -86,46 +88,11 @@ const Home = () => {
 
         {/* Sliders */}
         <Slider {...sliderSettings} className="slider-1">
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-1.png" alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-2.png" alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-3.png" alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-4.png" alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-5.png" alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-6.png" alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-7.png" alt="" />
-            </Link>
-          </div>
-          <div>
-            <Link to="/product-reduce">
-              <img src="images/kitchen/image 1-8.png" alt="" />
-            </Link>
-          </div>
+          {kitchenProducts.map((item, index) => (
+            <div key={index} className="img-wrapper">
+              <ProductItem item={item} key={index} />
+            </div>
+          ))}
         </Slider>
         {/* End of sliders */}
 
