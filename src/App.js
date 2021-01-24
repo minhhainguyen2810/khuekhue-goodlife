@@ -11,7 +11,6 @@ import Kitchen from "./pages/Kitchen";
 import Payment from "./pages/Payment";
 import ProductReduce from "./pages/ProductReduce";
 import ProductRefill from "./pages/ProductRefill";
-import Profile from "./pages/Profile";
 import Search from "./pages/Search";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -59,9 +58,6 @@ function App() {
         </Route>
         <Route path="/product-refill">
           <ProductRefill />
-        </Route>
-        <Route path="/profile">
-          <Profile />
         </Route>
         <Route path="/cart">
           <Cart />
