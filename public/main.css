@@ -10950,6 +10950,20 @@ footer h5, footer .h5 {
   padding-right: 30px;
 }
 
+.img-hover {
+  position: relative;
+}
+.img-hover button.like {
+  position: absolute;
+  right: 21px;
+  top: 12px;
+}
+.img-hover button.cart {
+  position: absolute;
+  right: 21px;
+  top: 63px;
+}
+
 .home-container {
   margin-top: 66px;
   position: relative;
@@ -11053,6 +11067,7 @@ footer h5, footer .h5 {
 }
 .product-detail-container .buy-group button {
   width: 250px;
+  padding: 0.75rem;
 }
 .product-detail-container .buy-group button:first-child {
   margin-right: 10px;
@@ -11084,6 +11099,10 @@ footer h5, footer .h5 {
 }
 .product-detail-container .section-3 .other-products img {
   width: 310px;
+}
+.product-detail-container .cart,
+.product-detail-container .like {
+  right: 30px !important;
 }
 
 .cart-container {

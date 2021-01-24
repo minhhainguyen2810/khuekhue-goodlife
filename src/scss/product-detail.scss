@@ -17,6 +17,7 @@
       }
     }
   }
+
   .social-btn {
     margin-top: 40px;
     display: inline-block;
@@ -46,5 +47,9 @@
         width: 310px;
       }
     }
+  }
+  .cart,
+  .like {
+    right: 30px !important;
   }
 }
