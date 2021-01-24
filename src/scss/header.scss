@@ -1,11 +1,18 @@
 .header {
   padding-top: 25px;
   text-transform: uppercase;
+  a,
+  button.link {
+    transition: opacity 1s, visibility 1s;
+    opacity: 1;
+    visibility: visible;
+  }
   &__about-us {
     background: url("images/about-us/MaskGroup.jpg");
     background-size: cover;
     height: 700px;
-    a {
+    a,
+    button.link {
       color: white;
     }
   }
@@ -13,7 +20,8 @@
     background: url("images/kitchen/Mask Group.png");
     background-size: cover;
     height: 655px;
-    a {
+    a,
+    button.link {
       color: $secondary;
     }
     color: $secondary;
@@ -22,7 +30,8 @@
     background: url("images/bathroom/1.png");
     background-size: cover;
     height: 655px;
-    a {
+    a,
+    button.link {
       color: $secondary;
     }
     color: $secondary;
@@ -31,13 +40,15 @@
     background: url("images/travelkit/Mask Group.png");
     background-size: cover;
     height: 655px;
-    a {
+    a,
+    button.link {
       color: $secondary;
     }
     color: $secondary;
   }
   &__search {
-    a {
+    a,
+    button.link {
       color: $secondary;
     }
     color: $secondary;
@@ -55,9 +66,50 @@
       position: absolute;
       right: 0;
     }
+    button.link {
+      color: $primary;
+    }
   }
   .active {
     color: $primary;
     border-bottom: 1px solid currentColor;
+  }
+  .is-search {
+    a,
+    button.link {
+      visibility: hidden;
+      opacity: 0;
+      // display: none !important;
+    }
+  }
+  .search-bar {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s;
+    input {
+      background: transparent;
+      min-width: 500px;
+      padding-left: 44px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .search-span {
+      position: absolute;
+      left: 15px;
+      top: 7px;
+      color: $secondary;
+    }
+    span {
+      margin-left: -20px;
+    }
+    &.is-search {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }

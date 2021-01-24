@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
+import Account from "./pages/Account";
 import Bathroom from "./pages/Bathroom";
 import Blogs from "./pages/Blogs";
 import Blog1 from "./pages/Blogs/Blog1";
@@ -8,8 +9,8 @@ import Home from "./pages/Home";
 import Information from "./pages/Information";
 import Kitchen from "./pages/Kitchen";
 import Payment from "./pages/Payment";
-import ProductDetail from "./pages/ProductDetail";
-import Profile from "./pages/Profile";
+import ProductReduce from "./pages/ProductReduce";
+import ProductRefill from "./pages/ProductRefill";
 import Search from "./pages/Search";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -52,11 +53,11 @@ function App() {
         <Route path="/search">
           <Search />
         </Route>
-        <Route path="/product-detail">
-          <ProductDetail />
+        <Route path="/product-reduce">
+          <ProductReduce />
         </Route>
-        <Route path="/profile">
-          <Profile />
+        <Route path="/product-refill">
+          <ProductRefill />
         </Route>
         <Route path="/cart">
           <Cart />
@@ -66,6 +67,9 @@ function App() {
         </Route>
         <Route path="/payment">
           <Payment />
+        </Route>
+        <Route path="/account">
+          <Account />
         </Route>
       </Switch>
     </Router>

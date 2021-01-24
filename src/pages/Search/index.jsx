@@ -7,8 +7,7 @@ const Search = () => {
   return (
     <>
       <div className="header header__search">
-        <Header logoDark />
-        <div className="container w-100 divider divider__secondary"></div>
+        <Header logoDark withDivider />
       </div>
       <div className="container kitchen-container">
         <h4 className="text-center mb-3">FIND 35 RESULTS FOR “brush”</h4>

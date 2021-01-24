@@ -74,6 +74,25 @@ input::placeholder {
   font-size: 0.8125rem;
 }
 
+p {
+  line-height: 1.625rem;
+}
+
+button.link,
+button.link:hover,
+button.link:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pagination {
+  margin: auto;
+  margin-top: 5rem;
+}
+
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -125,7 +144,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #3e3e3e;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1997,15 +2016,15 @@ progress {
 }
 .table {
   --bs-table-bg: transparent;
-  --bs-table-striped-color: #212529;
+  --bs-table-striped-color: #3e3e3e;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #212529;
+  --bs-table-active-color: #3e3e3e;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #212529;
+  --bs-table-hover-color: #3e3e3e;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #3e3e3e;
   vertical-align: top;
   border-color: #dee2e6;
 }
@@ -2227,7 +2246,7 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #3e3e3e;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -2247,7 +2266,7 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
+  color: #3e3e3e;
   background-color: #fff;
   border-color: #e4c4b0;
   outline: 0;
@@ -2268,7 +2287,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #3e3e3e;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -2290,7 +2309,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #3e3e3e;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -2315,7 +2334,7 @@ progress {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #3e3e3e;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2393,7 +2412,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #3e3e3e;
   vertical-align: middle;
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
@@ -2419,7 +2438,7 @@ textarea.form-control-lg {
 }
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #212529;
+  text-shadow: 0 0 0 #3e3e3e;
 }
 
 .form-select-sm {
@@ -2703,7 +2722,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #3e3e3e;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -2906,7 +2925,7 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #3e3e3e;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -2924,7 +2943,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: #3e3e3e;
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -3460,7 +3479,7 @@ textarea.form-control-lg {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #3e3e3e;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4339,7 +4358,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
+  color: #3e3e3e;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
@@ -4368,7 +4387,7 @@ textarea.form-control-lg {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233e3e3e'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
@@ -4729,7 +4748,7 @@ textarea.form-control-lg {
   background-color: #f8f9fa;
 }
 .list-group-item-action:active {
-  color: #212529;
+  color: #3e3e3e;
   background-color: #e9ecef;
 }
 
@@ -5649,7 +5668,7 @@ textarea.form-control-lg {
 
 .popover-body {
   padding: 1rem 1rem;
-  color: #212529;
+  color: #3e3e3e;
 }
 
 .carousel {
@@ -7137,7 +7156,7 @@ textarea.form-control-lg {
 }
 
 .text-body {
-  color: #212529 !important;
+  color: #3e3e3e !important;
 }
 
 .text-muted {
@@ -10776,12 +10795,19 @@ footer h5, footer .h5 {
   padding-top: 25px;
   text-transform: uppercase;
 }
+.header a,
+.header button.link {
+  transition: opacity 1s, visibility 1s;
+  opacity: 1;
+  visibility: visible;
+}
 .header__about-us {
   background: url("images/about-us/MaskGroup.jpg");
   background-size: cover;
   height: 700px;
 }
-.header__about-us a {
+.header__about-us a,
+.header__about-us button.link {
   color: white;
 }
 .header__kitchen {
@@ -10790,7 +10816,8 @@ footer h5, footer .h5 {
   height: 655px;
   color: #5c5c5c;
 }
-.header__kitchen a {
+.header__kitchen a,
+.header__kitchen button.link {
   color: #5c5c5c;
 }
 .header__bathroom {
@@ -10799,7 +10826,8 @@ footer h5, footer .h5 {
   height: 655px;
   color: #5c5c5c;
 }
-.header__bathroom a {
+.header__bathroom a,
+.header__bathroom button.link {
   color: #5c5c5c;
 }
 .header__travel {
@@ -10808,13 +10836,15 @@ footer h5, footer .h5 {
   height: 655px;
   color: #5c5c5c;
 }
-.header__travel a {
+.header__travel a,
+.header__travel button.link {
   color: #5c5c5c;
 }
 .header__search {
   color: #5c5c5c;
 }
-.header__search a {
+.header__search a,
+.header__search button.link {
   color: #5c5c5c;
 }
 .header__home {
@@ -10831,9 +10861,47 @@ footer h5, footer .h5 {
   position: absolute;
   right: 0;
 }
+.header__home button.link {
+  color: #c98860;
+}
 .header .active {
   color: #c98860;
   border-bottom: 1px solid currentColor;
+}
+.header .is-search a,
+.header .is-search button.link {
+  visibility: hidden;
+  opacity: 0;
+}
+.header .search-bar {
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, visibility 1s;
+}
+.header .search-bar input {
+  background: transparent;
+  min-width: 500px;
+  padding-left: 44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.header .search-bar .search-span {
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  color: #5c5c5c;
+}
+.header .search-bar span {
+  margin-left: -20px;
+}
+.header .search-bar.is-search {
+  visibility: visible;
+  opacity: 1;
 }
 
 .intro {
@@ -10856,6 +10924,7 @@ footer h5, footer .h5 {
 }
 .divider__secondary {
   border-top: 1px solid #5c5c5c;
+  transition: border-color 1s;
 }
 
 .divider-with-text {
@@ -10893,11 +10962,26 @@ footer h5, footer .h5 {
   width: 768px;
   margin-left: -560px;
 }
+.home-container .help-container .help-box {
+  width: 240px;
+}
 .home-container .our-blogs-title {
   margin-top: 150px;
 }
 .home-container img:focus {
   outline: none;
+}
+.home-container .slider-1 {
+  margin-left: 60px;
+}
+.home-container .slider-1 a {
+  width: 100% !important;
+}
+.home-container .slider-1 .img-wrapper {
+  width: 310px !important;
+}
+.home-container .slider-home {
+  margin-bottom: 9rem;
 }
 
 .about-us-container {
@@ -10940,6 +11024,9 @@ footer h5, footer .h5 {
 .kitchen-container .list-group {
   max-width: 225px;
 }
+.kitchen-container .filter-section {
+  margin-top: 25px;
+}
 
 .blog-container {
   margin-top: 5rem;
@@ -10957,6 +11044,9 @@ footer h5, footer .h5 {
 .product-detail-container {
   margin-top: 96px;
   margin-bottom: 120px;
+}
+.product-detail-container .form-select {
+  width: 228px;
 }
 .product-detail-container .stars {
   width: 130px;

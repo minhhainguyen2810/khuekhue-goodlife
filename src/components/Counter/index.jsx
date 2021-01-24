@@ -4,9 +4,9 @@ const Counter = ({ className }) => {
   const [count, setCount] = useState(1);
   return (
     <div className="align-items-center d-flex">
-      <a
+      <button
         onClick={() => setCount((state) => (state > 1 ? state - 1 : 1))}
-        role="button"
+        className="link"
       >
         <svg
           width="27"
@@ -26,7 +26,7 @@ const Counter = ({ className }) => {
             fill="#C98860"
           />
         </svg>
-      </a>
+      </button>
       <span className={className}>{count}</span>
       <a onClick={() => setCount((state) => state + 1)} role="button">
         <svg

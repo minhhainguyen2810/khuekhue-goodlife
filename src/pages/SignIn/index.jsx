@@ -78,9 +78,16 @@ const SignIn = () => {
             required=""
           />
           <div className="checkbox d-flex justify-content-between">
-            <label>
-              <input type="checkbox" value="remember-me" /> Remember me
-            </label>
+            <div className="form-check">
+              <input
+                type="checkbox"
+                className="form-check-input"
+                id="exampleCheck3"
+              />
+              <label className="form-check-label" htmlFor="exampleCheck3">
+                Remember me
+              </label>
+            </div>
             <Link to="/sign-up" className="link-secondary">
               <span>Forgot your password?</span>
             </Link>
