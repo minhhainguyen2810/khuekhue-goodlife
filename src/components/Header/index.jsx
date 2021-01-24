@@ -61,7 +61,7 @@ const Header = ({ logoDark, withDivider }) => {
                   autoComplete="off"
                 />
               </form>
-              <span className="mt-1" onClick={() => setSearch(false)}>
+              <span onClick={() => setSearch(false)}>
                 <svg
                   width="15"
                   height="15"

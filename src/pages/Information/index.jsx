@@ -123,7 +123,7 @@ const Information = () => {
                     type="radio"
                     name="Material"
                     id="r13"
-                    checked
+                    defaultChecked
                   />
                   <label className="form-check-label" htmlFor="r13">
                     DHL GoGreen (2-3 business days)
@@ -135,7 +135,11 @@ const Information = () => {
               <div className="d-flex justify-content-between my-5">
                 <Link to="/cart">Return to cart</Link>
 
-                <Link className="btn btn-primary btn-lg" to="/payment">
+                <Link
+                  className="btn btn-primary btn-lg"
+                  to="/payment"
+                  style={{ width: 200 }}
+                >
                   Payment
                 </Link>
               </div>

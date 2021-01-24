@@ -10795,6 +10795,10 @@ footer h5, footer .h5 {
   padding-top: 25px;
   text-transform: uppercase;
 }
+.header .logo {
+  position: absolute;
+  left: calc(50% - 101px);
+}
 .header a,
 .header button.link {
   transition: opacity 1s, visibility 1s;
@@ -10876,7 +10880,7 @@ footer h5, footer .h5 {
 .header .search-bar {
   display: flex;
   position: absolute;
-  left: 0;
+  left: calc(50% - 250px);
   width: 100%;
   z-index: 100;
   visibility: hidden;
@@ -10898,6 +10902,7 @@ footer h5, footer .h5 {
 }
 .header .search-bar span {
   margin-left: -20px;
+  margin-top: 0.4rem;
 }
 .header .search-bar.is-search {
   visibility: visible;
@@ -11085,6 +11090,10 @@ footer h5, footer .h5 {
 .product-detail-container .social-btn button.google {
   background-color: #dc4e41;
 }
+.product-detail-container .section-1 .cart,
+.product-detail-container .section-1 .like {
+  right: 30px !important;
+}
 .product-detail-container .section-2 {
   margin-top: 90px;
 }
@@ -11096,13 +11105,6 @@ footer h5, footer .h5 {
 }
 .product-detail-container .section-3 {
   margin-top: 90px;
-}
-.product-detail-container .section-3 .other-products img {
-  width: 310px;
-}
-.product-detail-container .cart,
-.product-detail-container .like {
-  right: 30px !important;
 }
 
 .cart-container {

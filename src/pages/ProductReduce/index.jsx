@@ -23,7 +23,7 @@ const ProductReduce = () => {
       <div className="container product-detail-container ">
         {/* first section */}
         <p className="fs-14 text-grey-3">HOME / BATHROOM / REDUCE PRODUCT</p>
-        <div className="row gx-5">
+        <div className="section-1 row gx-5">
           <div className="col-5">
             <div className="row mb-4">
               <div className="img-hover">
@@ -154,7 +154,7 @@ const ProductReduce = () => {
               <button className="btn btn-lg btn-outline-primary">
                 ADD TO CART
               </button>
-              <Link to="/home">
+              <Link to="/cart">
                 <button className="btn btn-lg btn-primary">BUY NOW</button>
               </Link>
             </div>

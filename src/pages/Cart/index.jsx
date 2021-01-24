@@ -77,7 +77,11 @@ const Cart = () => {
         <div className="d-flex justify-content-between mt-5">
           <Link to="/kitchen">Return to shopping</Link>
 
-          <Link className="btn btn-primary btn-lg" to="/information">
+          <Link
+            className="btn btn-primary btn-lg"
+            to="/information"
+            style={{ width: 200 }}
+          >
             Check Out
           </Link>
         </div>

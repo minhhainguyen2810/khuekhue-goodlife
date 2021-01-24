@@ -175,6 +175,7 @@ const Payment = () => {
                 <button
                   className="btn btn-primary btn-lg"
                   onClick={handleConfirm}
+                  style={{ width: 200 }}
                 >
                   Confirm
                 </button>

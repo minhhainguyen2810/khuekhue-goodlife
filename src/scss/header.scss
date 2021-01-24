@@ -89,7 +89,7 @@
   .search-bar {
     display: flex;
     position: absolute;
-    left: 0;
+    left: calc(50% - 250px);
     width: 100%;
     z-index: 100;
     visibility: hidden;
@@ -110,6 +110,7 @@
     }
     span {
       margin-left: -20px;
+      margin-top: 0.4rem;
     }
     &.is-search {
       visibility: visible;

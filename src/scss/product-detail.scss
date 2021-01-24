@@ -31,6 +31,12 @@
       }
     }
   }
+  .section-1 {
+    .cart,
+    .like {
+      right: 30px !important;
+    }
+  }
   .section-2 {
     margin-top: 90px;
     .nav-link {
@@ -42,14 +48,5 @@
   }
   .section-3 {
     margin-top: 90px;
-    .other-products {
-      img {
-        width: 310px;
-      }
-    }
-  }
-  .cart,
-  .like {
-    right: 30px !important;
   }
 }
