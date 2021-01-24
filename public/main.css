@@ -10886,7 +10886,7 @@ footer h5, footer .h5 {
   color: #5c5c5c;
 }
 .header .search-bar span {
-  margin-left: -16px;
+  margin-left: -20px;
 }
 .header .search-bar.is-search {
   visibility: visible;
@@ -10913,6 +10913,7 @@ footer h5, footer .h5 {
 }
 .divider__secondary {
   border-top: 1px solid #5c5c5c;
+  transition: border-color 1s;
 }
 
 .divider-with-text {

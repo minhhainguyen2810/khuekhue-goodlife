@@ -16,6 +16,7 @@
   }
   &__secondary {
     border-top: 1px solid $secondary;
+    transition: border-color 1s;
   }
 }
 .divider-with-text {
