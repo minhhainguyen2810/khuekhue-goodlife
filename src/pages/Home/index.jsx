@@ -166,28 +166,28 @@ const Home = () => {
         {/* Sliders */}
         <Slider {...sliderInstagramSettings}>
           <div>
-            <img src="images/kitchen/image 1-1.png" alt="" />
+            <img src="images/home/image 18.jpg" alt="" />
           </div>
           <div>
-            <img src="images/kitchen/image 1-2.png" alt="" />
+            <img src="images/home/image 19.jpg" alt="" />
           </div>
           <div>
-            <img src="images/kitchen/image 1-3.png" alt="" />
+            <img src="images/home/image 20.jpg" alt="" />
           </div>
           <div>
-            <img src="images/kitchen/image 1-4.png" alt="" />
+            <img src="images/home/image 21.jpg" alt="" />
           </div>
           <div>
-            <img src="images/kitchen/image 1-5.png" alt="" />
+            <img src="images/home/image 22.jpg" alt="" />
           </div>
           <div>
-            <img src="images/kitchen/image 1-6.png" alt="" />
+            <img src="images/home/image 23.jpg" alt="" />
           </div>
           <div>
-            <img src="images/kitchen/image 1-7.png" alt="" />
+            <img src="images/home/image 24.jpg" alt="" />
           </div>
           <div>
-            <img src="images/kitchen/image 1-8.png" alt="" />
+            <img src="images/home/image 25.jpg" alt="" />
           </div>
         </Slider>
         {/* End of sliders */}
