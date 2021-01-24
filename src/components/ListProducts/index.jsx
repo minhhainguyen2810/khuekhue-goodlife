@@ -14,7 +14,10 @@ const ListProducts = ({ products, col4, col3, col5, paging = true }) => {
           })}
           key={index}
         >
-          <Link to="/product-detail" key={index}>
+          <Link
+            to={item.type === "refill" ? "/product-refill" : "/product-reduce"}
+            key={index}
+          >
             <img className="text-center" src={item.imgSrc} alt={item.title} />
             <p className="mt-2 fs-14 text-light">{item.category}</p>
             <h6 className="mt-3 text-dark fs-18 ">{item.title}</h6>

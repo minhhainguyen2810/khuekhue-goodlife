@@ -92,10 +92,20 @@ input::placeholder {
   font-size: 0.8125rem;
 }
 
+p {
+  line-height: 1.625rem;
+}
+
 button.link,
 button.link:hover,
 button.link:focus {
   border: none;
   background-color: transparent;
   outline: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.pagination {
+  margin: auto;
+  margin-top: 5rem;
 }

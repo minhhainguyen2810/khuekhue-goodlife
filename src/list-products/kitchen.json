@@ -8,8 +8,9 @@
   {
     "imgSrc": "images/kitchen/image 1-1.png",
     "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
+    "category": "Kitchen | Refill",
+    "price": "$20",
+    "type": "refill"
   },
   {
     "imgSrc": "images/kitchen/image 1-2.png",

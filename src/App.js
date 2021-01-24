@@ -9,7 +9,8 @@ import Home from "./pages/Home";
 import Information from "./pages/Information";
 import Kitchen from "./pages/Kitchen";
 import Payment from "./pages/Payment";
-import ProductDetail from "./pages/ProductDetail";
+import ProductReduce from "./pages/ProductReduce";
+import ProductRefill from "./pages/ProductRefill";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
 import SignIn from "./pages/SignIn";
@@ -53,8 +54,11 @@ function App() {
         <Route path="/search">
           <Search />
         </Route>
-        <Route path="/product-detail">
-          <ProductDetail />
+        <Route path="/product-reduce">
+          <ProductReduce />
+        </Route>
+        <Route path="/product-refill">
+          <ProductRefill />
         </Route>
         <Route path="/profile">
           <Profile />

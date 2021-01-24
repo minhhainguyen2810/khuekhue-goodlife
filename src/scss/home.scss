@@ -50,6 +50,9 @@
   .help-container {
     width: 768px;
     margin-left: -560px;
+    .help-box {
+      width: 240px;
+    }
   }
   .our-blogs-title {
     margin-top: 150px;
@@ -58,6 +61,12 @@
     &:focus {
       outline: none;
     }
+  }
+  .slider-1 {
+    margin-left: 60px;
+  }
+  .slider-home {
+    margin-bottom: 9rem;
   }
   overflow-x: hidden;
 }

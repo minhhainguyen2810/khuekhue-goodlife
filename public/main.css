@@ -74,12 +74,23 @@ input::placeholder {
   font-size: 0.8125rem;
 }
 
+p {
+  line-height: 1.625rem;
+}
+
 button.link,
 button.link:hover,
 button.link:focus {
   border: none;
   background-color: transparent;
   outline: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pagination {
+  margin: auto;
+  margin-top: 5rem;
 }
 
 /*!
@@ -10951,11 +10962,20 @@ footer h5, footer .h5 {
   width: 768px;
   margin-left: -560px;
 }
+.home-container .help-container .help-box {
+  width: 240px;
+}
 .home-container .our-blogs-title {
   margin-top: 150px;
 }
 .home-container img:focus {
   outline: none;
+}
+.home-container .slider-1 {
+  margin-left: 60px;
+}
+.home-container .slider-home {
+  margin-bottom: 9rem;
 }
 
 .about-us-container {
@@ -11015,6 +11035,9 @@ footer h5, footer .h5 {
 .product-detail-container {
   margin-top: 96px;
   margin-bottom: 120px;
+}
+.product-detail-container .form-select {
+  width: 228px;
 }
 .product-detail-container .stars {
   width: 130px;

@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const sliderSettings = {
@@ -19,7 +20,7 @@ const Home = () => {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
   };
   return (
     <>
@@ -84,30 +85,46 @@ const Home = () => {
         <div className="divider divider__dark"></div>
 
         {/* Sliders */}
-        <Slider {...sliderSettings}>
+        <Slider {...sliderSettings} className="slider-1">
           <div>
-            <img src="images/kitchen/image 1-1.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-1.png" alt="" />
+            </Link>
           </div>
           <div>
-            <img src="images/kitchen/image 1-2.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-2.png" alt="" />
+            </Link>
           </div>
           <div>
-            <img src="images/kitchen/image 1-3.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-3.png" alt="" />
+            </Link>
           </div>
           <div>
-            <img src="images/kitchen/image 1-4.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-4.png" alt="" />
+            </Link>
           </div>
           <div>
-            <img src="images/kitchen/image 1-5.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-5.png" alt="" />
+            </Link>
           </div>
           <div>
-            <img src="images/kitchen/image 1-6.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-6.png" alt="" />
+            </Link>
           </div>
           <div>
-            <img src="images/kitchen/image 1-7.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-7.png" alt="" />
+            </Link>
           </div>
           <div>
-            <img src="images/kitchen/image 1-8.png" alt="" />
+            <Link to="/product-reduce">
+              <img src="images/kitchen/image 1-8.png" alt="" />
+            </Link>
           </div>
         </Slider>
         {/* End of sliders */}
@@ -118,42 +135,53 @@ const Home = () => {
         <div className="container blog-container">
           <div className="row gx-5">
             <div className="col-xl-4 col-xs-12">
-              <img className="w-100" src="images/blog/Mask Group.jpg" alt="" />
-              <h4 className="fs-18 mb-2 fw-bold mt-4">
-                10 WAYS TO BE MORE ECO-FRIENDLY
-              </h4>
-              <p className="h6">
-                Sustainability is on everyone’s lips these days. Lots and lots
-                of people are striving to make more eco-conscious [...]
-              </p>
+              <Link to="/blog1">
+                <img
+                  className="w-100"
+                  src="images/blog/Mask Group.jpg"
+                  alt=""
+                />
+                <h4 className="fs-18 mb-2 fw-bold mt-4 text-dark">
+                  10 WAYS TO BE MORE ECO-FRIENDLY
+                </h4>
+                <p className="h6 text-dark">
+                  Sustainability is on everyone’s lips these days. Lots and lots
+                  of people are striving to make more eco-conscious [...]
+                </p>
+              </Link>
             </div>
             <div className="col-xl-4 col-xs-12">
-              <img
-                className="w-100"
-                src="images/blog/Mask Group-2.jpg"
-                alt=""
-              />
-              <h4 className="fs-18 mb-2 fw-bold mt-4">
-                BENEFITS OF USING A WOODEN HAIR BRUSH
-              </h4>
-              <p className="h6">
-                Your hair is the crown you never take off so why not take good
-                care of it and make it look as beautiful as possible? [...]
-              </p>
+              <Link to="/blog1">
+                <img
+                  className="w-100"
+                  src="images/blog/Mask Group-2.jpg"
+                  alt=""
+                />
+                <h4 className="fs-18 mb-2 fw-bold mt-4 text-dark">
+                  BENEFITS OF USING A WOODEN HAIR BRUSH
+                </h4>
+                <p className="h6 text-dark">
+                  Your hair is the crown you never take off so why not take good
+                  care of it and make it look as beautiful as possible? [...]
+                </p>
+              </Link>
             </div>
             <div className="col-xl-4 col-xs-12">
-              <img
-                className="w-100"
-                src="images/blog/Mask Group-3.jpg"
-                alt=""
-              />
-              <h4 className="fs-18 mb-2 fw-bold mt-4">
-                WAY TO REDUCE FOOD WASTE
-              </h4>
-              <p className="h6">
-                Every year, one third of all food produced for human consumption
-                is wasted or lost - either before or during harvest [...]
-              </p>
+              <Link to="/blog1">
+                <img
+                  className="w-100"
+                  src="images/blog/Mask Group-3.jpg"
+                  alt=""
+                />
+                <h4 className="fs-18 mb-2 fw-bold mt-4 text-dark">
+                  WAY TO REDUCE FOOD WASTE
+                </h4>
+                <p className="h6 text-dark">
+                  Every year, one third of all food produced for human
+                  consumption is wasted or lost - either before or during
+                  harvest [...]
+                </p>
+              </Link>
             </div>
           </div>
         </div>
@@ -164,33 +192,51 @@ const Home = () => {
         <div className="divider divider__dark"></div>
 
         {/* Sliders */}
-        <Slider {...sliderInstagramSettings}>
-          <div>
-            <img src="images/kitchen/image 1-1.png" alt="" />
-          </div>
-          <div>
-            <img src="images/kitchen/image 1-2.png" alt="" />
-          </div>
-          <div>
-            <img src="images/kitchen/image 1-3.png" alt="" />
-          </div>
-          <div>
-            <img src="images/kitchen/image 1-4.png" alt="" />
-          </div>
-          <div>
-            <img src="images/kitchen/image 1-5.png" alt="" />
-          </div>
-          <div>
-            <img src="images/kitchen/image 1-6.png" alt="" />
-          </div>
-          <div>
-            <img src="images/kitchen/image 1-7.png" alt="" />
-          </div>
-          <div>
-            <img src="images/kitchen/image 1-8.png" alt="" />
-          </div>
-        </Slider>
-        {/* End of sliders */}
+        <div className="slider-home">
+          <Slider {...sliderInstagramSettings}>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-1.png" alt="" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-2.png" alt="" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-3.png" alt="" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-4.png" alt="" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-5.png" alt="" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-6.png" alt="" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-7.png" alt="" />
+              </Link>
+            </div>
+            <div>
+              <Link to="/product-reduce">
+                <img src="images/kitchen/image 1-8.png" alt="" />
+              </Link>
+            </div>
+          </Slider>
+          {/* End of sliders */}
+        </div>
       </div>
       <Footer />
     </>
