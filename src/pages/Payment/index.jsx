@@ -1,6 +1,19 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
 
 const Payment = () => {
+  const [show, setShow] = useState(false);
+  const history = useHistory();
+
+  const handleClose = () => {
+    setShow(false);
+    history.push("/cart");
+  };
+
+  const handleConfirm = () => {
+    setShow(true);
+  };
   return (
     <>
       <div className="container product-detail-container ">
@@ -156,12 +169,16 @@ const Payment = () => {
                 </div>
               </div>
 
-              <div className="d-flex justify-content-between mt-5">
+              <div className="d-flex justify-content-between my-5">
                 <Link to="/information">Return to Information</Link>
 
-                <Link className="btn btn-primary btn-lg" to="/Home">
+                <button
+                  className="btn btn-primary btn-lg"
+                  onClick={handleConfirm}
+                  style={{ width: 200 }}
+                >
                   Confirm
-                </Link>
+                </button>
               </div>
             </form>
           </div>
@@ -212,6 +229,18 @@ const Payment = () => {
           </div>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Body className="text-center">
+          <img className="mt-5" src="images/verified 1.png" alt="verified" />
+          <p className="fs-4 mb-4 mt-5">THANKS FOR YOUR ORDER!</p>
+          <p>Your payment is complete. Check your email receipt.</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            Back to your cart
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };

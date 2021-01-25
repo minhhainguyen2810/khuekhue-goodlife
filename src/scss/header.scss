@@ -1,6 +1,10 @@
 .header {
   padding-top: 25px;
   text-transform: uppercase;
+  .logo {
+    position: absolute;
+    left: calc(50% - 101px);
+  }
   a,
   button.link {
     transition: opacity 1s, visibility 1s;
@@ -85,8 +89,7 @@
   .search-bar {
     display: flex;
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: calc(50% - 250px);
     z-index: 100;
     visibility: hidden;
     opacity: 0;
@@ -106,6 +109,7 @@
     }
     span {
       margin-left: -20px;
+      margin-top: 0.4rem;
     }
     &.is-search {
       visibility: visible;

@@ -19,15 +19,13 @@ const Header = ({ logoDark, withDivider }) => {
     <>
       <nav className="site-header">
         <div
-          className={classNames(
-            "container d-flex flex-column flex-md-row justify-content-between align-items-center",
-            { "is-search": isSearch }
-          )}
+          className={classNames("container d-flex justify-content-between", {
+            "is-search": isSearch,
+          })}
         >
           <div
-            className={
-              "container d-flex flex-column flex-md-row justify-content-around align-items-center position-relative"
-            }
+            className={"d-flex justify-content-between"}
+            style={{ width: "427px" }}
           >
             <div
               className={classNames("search-bar", {
@@ -63,7 +61,7 @@ const Header = ({ logoDark, withDivider }) => {
                   autoComplete="off"
                 />
               </form>
-              <span className="mt-1" onClick={() => setSearch(false)}>
+              <span onClick={() => setSearch(false)}>
                 <svg
                   width="15"
                   height="15"
@@ -107,14 +105,17 @@ const Header = ({ logoDark, withDivider }) => {
               For travel
             </NavLink>
           </div>
-          <Link to="/home" className="fs-14 d-md-inline-block">
+          <Link to="/home" className="fs-14 d-md-inline-block logo">
             <img
               src={logoDark ? "images/logo-dark.png" : "images/logo.png"}
               alt="good-life"
               width={203}
             />
           </Link>
-          <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
+          <div
+            className="d-flex justify-content-between align-items-end"
+            style={{ width: "421px" }}
+          >
             <NavLink
               activeClassName="active"
               to="/about-us"

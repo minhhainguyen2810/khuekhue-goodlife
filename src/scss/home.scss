@@ -41,6 +41,20 @@
     padding-right: 30px;
   }
 }
+.img-hover {
+  position: relative;
+  button.like {
+    position: absolute;
+    right: 21px;
+    top: 12px;
+  }
+  button.cart {
+    position: absolute;
+    right: 21px;
+    top: 63px;
+  }
+}
+
 .home-container {
   margin-top: 66px;
   position: relative;

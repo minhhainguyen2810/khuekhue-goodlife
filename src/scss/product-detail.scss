@@ -11,11 +11,13 @@
     margin-top: 30px;
     button {
       width: 250px;
+      padding: 0.75rem;
       &:first-child {
         margin-right: 10px;
       }
     }
   }
+
   .social-btn {
     margin-top: 40px;
     display: inline-block;
@@ -29,6 +31,12 @@
       }
     }
   }
+  .section-1 {
+    .cart,
+    .like {
+      right: 30px !important;
+    }
+  }
   .section-2 {
     margin-top: 90px;
     .nav-link {
@@ -40,10 +48,5 @@
   }
   .section-3 {
     margin-top: 90px;
-    .other-products {
-      img {
-        width: 310px;
-      }
-    }
   }
 }

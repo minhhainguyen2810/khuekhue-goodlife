@@ -5,8 +5,16 @@ import Header from "../../components/Header";
 import ListProducts from "../../components/ListProducts";
 import otherProductsBathroom from "../../list-products/other-products-bathroom.json";
 import Counter from "../../components/Counter";
+import { useState } from "react";
 
-const ProductRefill = () => {
+const ProductReduce = () => {
+  const [hovering, setHovering] = useState(false);
+  const handleEnter = () => {
+    setHovering(true);
+  };
+  const handleLeave = () => {
+    setHovering(false);
+  };
   return (
     <>
       <div className="header header__search">
@@ -15,10 +23,36 @@ const ProductRefill = () => {
       <div className="container product-detail-container ">
         {/* first section */}
         <p className="fs-14 text-grey-3">HOME / BATHROOM / REFILL PRODUCT</p>
-        <div className="row gx-5">
+        <div className="section-1 row gx-5">
           <div className="col-5">
             <div className="row mb-4">
-              <img src="images/bathroom-refill/image 2.png" alt="detail" />
+              <div className="img-hover">
+                <img
+                  src="images/bathroom-refill/image 2.png"
+                  alt="detail"
+                  className="w-100"
+                  onMouseEnter={handleEnter}
+                  onMouseLeave={handleLeave}
+                />
+                {hovering && (
+                  <>
+                    <button
+                      className="like link"
+                      onMouseEnter={handleEnter}
+                      onMouseLeave={handleLeave}
+                    >
+                      <img src="images/Group 67.png" alt="" />
+                    </button>
+                    <button
+                      className="cart link"
+                      onMouseEnter={handleEnter}
+                      onMouseLeave={handleLeave}
+                    >
+                      <img src="images/Group 68.png" alt="" />
+                    </button>
+                  </>
+                )}
+              </div>
             </div>
             <div className="d-flex justify-content-between">
               <img
@@ -184,4 +218,4 @@ const ProductRefill = () => {
   );
 };
 
-export default ProductRefill;
+export default ProductReduce;
