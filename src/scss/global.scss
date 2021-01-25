@@ -105,6 +105,11 @@ button.link:focus {
   padding-left: 0;
   padding-right: 0;
 }
+
+.btn-outline-primary:hover {
+  color: white !important;
+}
+
 .pagination {
   margin: auto;
   margin-top: 5rem;
