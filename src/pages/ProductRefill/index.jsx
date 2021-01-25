@@ -6,6 +6,7 @@ import ListProducts from "../../components/ListProducts";
 import otherProductsBathroom from "../../list-products/other-products-bathroom.json";
 import Counter from "../../components/Counter";
 import { useState } from "react";
+import CommentBlock from "../../components/CommentBlock";
 
 const ProductReduce = () => {
   const [hovering, setHovering] = useState(false);
@@ -203,6 +204,94 @@ const ProductReduce = () => {
               col3
               paging={false}
             />
+          </div>
+        </div>
+        <div className="section-4">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="row">
+                <div className="d-flex justify-content-between reviews-stars">
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <div className="ms-4">4 reviews</div>
+                </div>
+              </div>
+              <CommentBlock
+                name="YvanaVerified"
+                review="Finally a bamboo toothbrush with different levels of bristles!I have been using bamboo toothbrushes for a while now, but they were also too soft. I am so glad that I finally found one with harder bristles!"
+              />
+              <CommentBlock
+                name="CharlotteVerified"
+                review="Favorite bamboo toothbrushSo lovely that you can purchase these in hard. Have tried different bamboo toothbrushes however this one is one of my favorites."
+              />
+            </div>
+            <div className="col-md-6">
+              <p className="text-uppercase fw-bold">Write your reviews</p>
+              <div
+                className="d-flex justify-content-between"
+                style={{ width: "170px" }}
+              >
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+              </div>
+              <div className="row mt-4">
+                <div className="col-6">
+                  <label htmlFor="name">User name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+                <div className="col-6">
+                  <label htmlFor="email">User name</label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <label htmlFor="name">Title</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <label htmlFor="name">Review</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+              </div>
+              <div className="d-flex justify-content-end mt-3">
+                <button className="btn btn-lg btn-primary" type="submit">
+                  SUBMIT
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -109,3 +109,35 @@ button.link:focus {
   margin: auto;
   margin-top: 5rem;
 }
+
+.img-hover {
+  position: relative;
+  button.like {
+    position: absolute;
+    right: 21px;
+    top: 12px;
+  }
+  button.cart {
+    position: absolute;
+    right: 21px;
+    top: 63px;
+  }
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+  img {
+    transition: transform 0.5s ease;
+  }
+  &:hover {
+    img {
+      transform: scale(1.7);
+    }
+    .cart,
+    .like {
+      img {
+        transform: scale(1);
+      }
+    }
+  }
+}
