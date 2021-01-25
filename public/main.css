@@ -93,6 +93,34 @@ button.link:focus {
   margin-top: 5rem;
 }
 
+.img-hover {
+  position: relative;
+}
+.img-hover button.like {
+  position: absolute;
+  right: 21px;
+  top: 12px;
+}
+.img-hover button.cart {
+  position: absolute;
+  right: 21px;
+  top: 63px;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.7);
+}
+.img-hover-zoom:hover .cart img,
+.img-hover-zoom:hover .like img {
+  transform: scale(1);
+}
+
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -10954,20 +10982,6 @@ footer h5, footer .h5 {
   padding-right: 30px;
 }
 
-.img-hover {
-  position: relative;
-}
-.img-hover button.like {
-  position: absolute;
-  right: 21px;
-  top: 12px;
-}
-.img-hover button.cart {
-  position: absolute;
-  right: 21px;
-  top: 63px;
-}
-
 .home-container {
   margin-top: 66px;
   position: relative;
@@ -11069,6 +11083,9 @@ footer h5, footer .h5 {
 .product-detail-container .stars {
   width: 130px;
 }
+.product-detail-container .reviews-stars {
+  width: 260px;
+}
 .product-detail-container .buy-group {
   margin-top: 30px;
 }
@@ -11107,6 +11124,19 @@ footer h5, footer .h5 {
 }
 .product-detail-container .section-3 {
   margin-top: 90px;
+}
+.product-detail-container .section-4 {
+  margin-top: 90px;
+}
+
+.avatar {
+  padding: 0.75rem;
+  background-color: #efcead;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  min-width: 48px;
+  height: 48px;
 }
 
 .cart-container {

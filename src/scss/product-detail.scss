@@ -7,6 +7,9 @@
   .stars {
     width: 130px;
   }
+  .reviews-stars {
+    width: 260px;
+  }
   .buy-group {
     margin-top: 30px;
     button {
@@ -49,4 +52,16 @@
   .section-3 {
     margin-top: 90px;
   }
+  .section-4 {
+    margin-top: 90px;
+  }
+}
+.avatar {
+  padding: 0.75rem;
+  background-color: #efcead;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  min-width: 48px;
+  height: 48px;
 }

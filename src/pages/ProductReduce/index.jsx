@@ -6,6 +6,7 @@ import ListProducts from "../../components/ListProducts";
 import otherProductsBathroom from "../../list-products/other-products-bathroom.json";
 import Counter from "../../components/Counter";
 import { useState } from "react";
+import CommentBlock from "../../components/CommentBlock";
 
 const ProductReduce = () => {
   const [hovering, setHovering] = useState(false);
@@ -13,8 +14,9 @@ const ProductReduce = () => {
     setHovering(true);
   };
   const handleLeave = () => {
-    setHovering(false);
+    setHovering(true);
   };
+
   return (
     <>
       <div className="header header__search">
@@ -26,7 +28,7 @@ const ProductReduce = () => {
         <div className="section-1 row gx-5">
           <div className="col-5">
             <div className="row mb-4">
-              <div className="img-hover">
+              <div className="img-hover img-hover-zoom">
                 <img
                   src="images/kitchen/image 1-1.png"
                   alt="detail"
@@ -73,66 +75,11 @@ const ProductReduce = () => {
           <div className="col-7">
             <h4 className="text-dark fw-bold mb-3">BAMBOO TOOTHBRUSH</h4>
             <div className="d-flex justify-content-between stars">
-              <svg
-                width="22"
-                height="20"
-                viewBox="0 0 22 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.1136 0.695722L7.56316 5.86696L1.85682 6.69889C0.833509 6.84731 0.423403 8.10887 1.1655 8.83144L5.2939 12.8544L4.31746 18.5373C4.1417 19.5645 5.2236 20.3339 6.12974 19.8535L11.2346 17.1702L16.3394 19.8535C17.2456 20.33 18.3275 19.5645 18.1517 18.5373L17.1753 12.8544L21.3037 8.83144C22.0458 8.10887 21.6357 6.84731 20.6123 6.69889L14.906 5.86696L12.3555 0.695722C11.8986 -0.226039 10.5745 -0.237757 10.1136 0.695722Z"
-                  fill="#C98860"
-                />
-              </svg>
-              <svg
-                width="22"
-                height="20"
-                viewBox="0 0 22 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.1136 0.695722L7.56316 5.86696L1.85682 6.69889C0.833509 6.84731 0.423403 8.10887 1.1655 8.83144L5.2939 12.8544L4.31746 18.5373C4.1417 19.5645 5.2236 20.3339 6.12974 19.8535L11.2346 17.1702L16.3394 19.8535C17.2456 20.33 18.3275 19.5645 18.1517 18.5373L17.1753 12.8544L21.3037 8.83144C22.0458 8.10887 21.6357 6.84731 20.6123 6.69889L14.906 5.86696L12.3555 0.695722C11.8986 -0.226039 10.5745 -0.237757 10.1136 0.695722Z"
-                  fill="#C98860"
-                />
-              </svg>
-              <svg
-                width="22"
-                height="20"
-                viewBox="0 0 22 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.1136 0.695722L7.56316 5.86696L1.85682 6.69889C0.833509 6.84731 0.423403 8.10887 1.1655 8.83144L5.2939 12.8544L4.31746 18.5373C4.1417 19.5645 5.2236 20.3339 6.12974 19.8535L11.2346 17.1702L16.3394 19.8535C17.2456 20.33 18.3275 19.5645 18.1517 18.5373L17.1753 12.8544L21.3037 8.83144C22.0458 8.10887 21.6357 6.84731 20.6123 6.69889L14.906 5.86696L12.3555 0.695722C11.8986 -0.226039 10.5745 -0.237757 10.1136 0.695722Z"
-                  fill="#C98860"
-                />
-              </svg>
-              <svg
-                width="22"
-                height="20"
-                viewBox="0 0 22 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.1136 0.695722L7.56316 5.86696L1.85682 6.69889C0.833509 6.84731 0.423403 8.10887 1.1655 8.83144L5.2939 12.8544L4.31746 18.5373C4.1417 19.5645 5.2236 20.3339 6.12974 19.8535L11.2346 17.1702L16.3394 19.8535C17.2456 20.33 18.3275 19.5645 18.1517 18.5373L17.1753 12.8544L21.3037 8.83144C22.0458 8.10887 21.6357 6.84731 20.6123 6.69889L14.906 5.86696L12.3555 0.695722C11.8986 -0.226039 10.5745 -0.237757 10.1136 0.695722Z"
-                  fill="#C98860"
-                />
-              </svg>
-              <svg
-                width="22"
-                height="20"
-                viewBox="0 0 22 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.1136 0.695722L7.56316 5.86696L1.85682 6.69889C0.833509 6.84731 0.423403 8.10887 1.1655 8.83144L5.2939 12.8544L4.31746 18.5373C4.1417 19.5645 5.2236 20.3339 6.12974 19.8535L11.2346 17.1702L16.3394 19.8535C17.2456 20.33 18.3275 19.5645 18.1517 18.5373L17.1753 12.8544L21.3037 8.83144C22.0458 8.10887 21.6357 6.84731 20.6123 6.69889L14.906 5.86696L12.3555 0.695722C11.8986 -0.226039 10.5745 -0.237757 10.1136 0.695722Z"
-                  fill="#C98860"
-                />
-              </svg>
+              <img src="images/star.svg" alt="" />
+              <img src="images/star.svg" alt="" />
+              <img src="images/star.svg" alt="" />
+              <img src="images/star.svg" alt="" />
+              <img src="images/star.svg" alt="" />
             </div>
             <p className="fs-4 fw-bold mt-3">$4.99</p>
             <div className="row fw-light">
@@ -205,6 +152,94 @@ const ProductReduce = () => {
               col3
               paging={false}
             />
+          </div>
+        </div>
+        <div className="section-4">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="row">
+                <div className="d-flex justify-content-between reviews-stars">
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <img src="images/star.svg" alt="" />
+                  <div className="ms-4">4 reviews</div>
+                </div>
+              </div>
+              <CommentBlock
+                name="YvanaVerified"
+                review="Finally a bamboo toothbrush with different levels of bristles!I have been using bamboo toothbrushes for a while now, but they were also too soft. I am so glad that I finally found one with harder bristles!"
+              />
+              <CommentBlock
+                name="CharlotteVerified"
+                review="Favorite bamboo toothbrushSo lovely that you can purchase these in hard. Have tried different bamboo toothbrushes however this one is one of my favorites."
+              />
+            </div>
+            <div className="col-md-6">
+              <p className="text-uppercase fw-bold">Write your reviews</p>
+              <div
+                className="d-flex justify-content-between"
+                style={{ width: "170px" }}
+              >
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+                <img src="images/vector.png" alt="star" />
+              </div>
+              <div className="row mt-4">
+                <div className="col-6">
+                  <label htmlFor="name">User name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+                <div className="col-6">
+                  <label htmlFor="email">User name</label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <label htmlFor="name">Title</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <label htmlFor="name">Review</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control border-bot"
+                    required=""
+                    autoFocus=""
+                  />
+                </div>
+              </div>
+              <div className="d-flex justify-content-end mt-3">
+                <button className="btn btn-lg btn-primary" type="submit">
+                  SUBMIT
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
