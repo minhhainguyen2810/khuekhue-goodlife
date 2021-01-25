@@ -43,13 +43,6 @@ const ProductReduce = () => {
                     >
                       <img src="images/Group 67.png" alt="" />
                     </button>
-                    <button
-                      className="cart link"
-                      onMouseEnter={handleEnter}
-                      onMouseLeave={handleLeave}
-                    >
-                      <img src="images/Group 68.png" alt="" />
-                    </button>
                   </>
                 )}
               </div>

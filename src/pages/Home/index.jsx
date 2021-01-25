@@ -99,7 +99,7 @@ const Home = () => {
         <h2 className="our-blogs-title text-dark fw-bold">OUR BLOGS</h2>
         <div className="divider divider__dark"></div>
 
-        <div className="container blog-container">
+        <div className="container blog-container text-start">
           <div className="row gx-5">
             <div className="col-xl-4 col-xs-12">
               <Link to="/blog1">
@@ -173,32 +173,32 @@ const Home = () => {
             </div>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 20.png" alt="" />
+                <img src="images/home/image 20.jpg" alt="" />
               </Link>
             </div>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 21.png" alt="" />
+                <img src="images/home/image 21.jpg" alt="" />
               </Link>
             </div>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 22.png" alt="" />
+                <img src="images/home/image 22.jpg" alt="" />
               </Link>
             </div>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 23.png" alt="" />
+                <img src="images/home/image 23.jpg" alt="" />
               </Link>
             </div>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 24.png" alt="" />
+                <img src="images/home/image 24.jpg" alt="" />
               </Link>
             </div>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 25.png" alt="" />
+                <img src="images/home/image 25.jpg" alt="" />
               </Link>
             </div>
           </Slider>
