@@ -27,7 +27,7 @@ const ProductReduce = () => {
         <div className="section-1 row gx-5">
           <div className="col-5">
             <div className="row mb-4">
-              <div className="img-hover">
+              <div className="img-hover img-hover-zoom">
                 <img
                   src="images/bathroom-refill/image 2.png"
                   alt="detail"
