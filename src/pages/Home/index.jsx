@@ -163,12 +163,12 @@ const Home = () => {
           <Slider {...sliderInstagramSettings}>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 18.png" alt="" />
+                <img src="images/home/image 18.jpg" alt="" />
               </Link>
             </div>
             <div>
               <Link to="/product-reduce">
-                <img src="images/home/image 19.png" alt="" />
+                <img src="images/home/image 19.jpg" alt="" />
               </Link>
             </div>
             <div>

@@ -3,7 +3,8 @@
     "imgSrc": "images/bathroom-refill/image 1-1.png",
     "title": "BODY LOTION - LAVENDER",
     "category": "Bathroom  |  Refill",
-    "price": "$0.80/oz"
+    "price": "$0.80/oz",
+    "type": "refill"
   },
   {
     "imgSrc": "images/bathroom-refill/image 1-1.png",

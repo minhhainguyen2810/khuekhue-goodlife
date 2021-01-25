@@ -14,37 +14,22 @@ const ProductRefill = () => {
       </div>
       <div className="container product-detail-container ">
         {/* first section */}
-        <p className="fs-14 text-grey-3">HOME / BATHROOM / REDUCE PRODUCT</p>
+        <p className="fs-14 text-grey-3">HOME / BATHROOM / REFILL PRODUCT</p>
         <div className="row gx-5">
           <div className="col-5">
             <div className="row mb-4">
-              <img src="images/kitchen/image 1-1.png" alt="detail" />
+              <img src="images/bathroom-refill/image 2.png" alt="detail" />
             </div>
             <div className="d-flex justify-content-between">
               <img
-                src="images/kitchen/image 1-1.png"
-                alt="detail"
-                width={100}
-              />
-              <img
-                src="images/kitchen/image 1-2.png"
-                alt="detail"
-                width={100}
-              />
-              <img
-                src="images/kitchen/image 1-3.png"
-                alt="detail"
-                width={100}
-              />
-              <img
-                src="images/kitchen/image 1-4.png"
+                src="images/bathroom-refill/image 1-1.png"
                 alt="detail"
                 width={100}
               />
             </div>
           </div>
           <div className="col-7">
-            <h4 className="text-dark fw-bold mb-3">BAMBOO TOOTHBRUSH</h4>
+            <h4 className="text-dark fw-bold mb-3">BODY LOTION - LAVENDER </h4>
             <div className="d-flex justify-content-between stars">
               <svg
                 width="22"
@@ -107,20 +92,25 @@ const ProductRefill = () => {
                 />
               </svg>
             </div>
-            <p className="fs-4 fw-bold mt-3">$4.99</p>
-            <div className="row fw-light">
-              <div className="col-6">Material:</div>
-              <div className="col-6">Size: 19 cm (7.5 in)</div>
-            </div>
-            <p className="fw-light"> Handle: 100% natural bamboo</p>
-            <p className="fw-light"> Bristles: 100% BPA-free nylon</p>
-            <p className="fw-bold">Quantity</p>
-            <p className="mb-4">Choose container for lotion</p>
+            <p className="fs-4 fw-bold mt-3">$0.8/oz</p>
+
+            <p className="fw-light">
+              {" "}
+              This moisturizing body lotion with MSM is all natural with no
+              artificial ingredients and no parabens. Daily use leaves skin soft
+              and youthful. Pure essential oils are used for their therapeutic
+              and fragrance benefits, and orange essential oils provide
+              anti-oxidant properties.
+            </p>
+            <p className="fw-bold">Choose container for lotion</p>
             <div className="form-group">
               <select className="form-select border-bot mb-4" aria-label="Size">
-                <option value="2oz">2oz</option>
-                <option value="3oz">3oz</option>
-                <option value="4oz">4oz</option>
+                <option value="2oz">4oz with new bottle </option>
+                <option value="3oz">8oz with new bottle</option>
+                <option value="4oz">16oz with new bottle</option>
+                <option value="2oz">4oz refill </option>
+                <option value="3oz">8oz refill</option>
+                <option value="4oz">16oz refill</option>
               </select>
             </div>
             <Counter className="fs-4 fw-bold mx-3" />
