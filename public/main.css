@@ -10881,7 +10881,6 @@ footer h5, footer .h5 {
   display: flex;
   position: absolute;
   left: calc(50% - 250px);
-  width: 100%;
   z-index: 100;
   visibility: hidden;
   opacity: 0;
