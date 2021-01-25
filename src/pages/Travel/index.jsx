@@ -27,7 +27,7 @@ const Travel = () => {
                   })}
                   onClick={() => setFilter(0)}
                 >
-                  All (37)
+                  All (15)
                 </a>
               </li>
               <li>
@@ -38,7 +38,7 @@ const Travel = () => {
                   })}
                   onClick={() => setFilter(1)}
                 >
-                  Reduce Products (30)
+                  Zero Waste Products (8)
                 </a>
               </li>
               <li>
@@ -49,7 +49,7 @@ const Travel = () => {
                   })}
                   onClick={() => setFilter(2)}
                 >
-                  Refill Products (7)
+                  Zero Waste Kit (7)
                 </a>
               </li>
             </ul>

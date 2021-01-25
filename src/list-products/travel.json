@@ -1,56 +1,50 @@
 [
   {
-    "imgSrc": "images/kitchen/image 1.png",
-    "title": "Nice kitchen stuff",
+    "imgSrc": "images/travelproduct/image 1.png",
+    "title": "9.45' STAINLESS STEEL STRAW",
+    "category": "Travel | Product",
+    "price": "$2.00"
+  },
+  {
+    "imgSrc": "images/travelproduct/image 1-1.png",
+    "title": "8.5' STAINLESS STEEL STRAIGHT",
+    "category": "Travel | Product",
+    "price": "$2.00"
+  },
+  {
+    "imgSrc": "images/travelproduct/image 1-2.png",
+    "title": "STRAW BRUSH",
+    "category": "Travel | Product",
+    "price": "$20.00"
+  },
+  {
+    "imgSrc": "images/travelproduct/image 1-3.png",
+    "title": "STAINLESS STEEL DRINKING",
+    "category": "Travel | Product",
+    "price": "$12.50"
+  },
+  {
+    "imgSrc": "images/travelproduct/image 1-4.png",
+    "title": "STRING BAGS",
+    "category": "Travel | Product",
+    "price": "$9.00"
+  },
+  {
+    "imgSrc": "images/travelproduct/image 1-5.png",
+    "title": "ORGANIC COTTON CANVAS",
+    "category": "Travel | Product",
+    "price": "$9.00"
+  },
+  {
+    "imgSrc": "images/travelproduct/image 1-6.png",
+    "title": "STAINLESS STEEL BOTTEL",
     "category": "Travel | Reduce",
-    "price": "$20"
+    "price": "$15.00"
   },
   {
-    "imgSrc": "images/kitchen/image 1-1.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-2.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-3.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-4.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-5.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-6.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-7.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-8.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
+    "imgSrc": "images/travelproduct/image 1-7.png",
+    "title": "BAMBOO CUTLERY SET",
+    "category": "Travel | Reduce",
+    "price": "$10.00"
   }
 ]

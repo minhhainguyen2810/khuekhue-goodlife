@@ -14,7 +14,7 @@ const Blogs = () => {
             <h4 className="fs-18 mb-2 fw-bold mt-4">
               10 WAYS TO BE MORE ECO-FRIENDLY
             </h4>
-            <p className="h6">
+            <p className="fw-light">
               Sustainability is on everyone’s lips these days. Lots and lots of
               people are striving to make more eco-conscious [...]
             </p>
@@ -22,9 +22,9 @@ const Blogs = () => {
           <div className="col-xl-4 col-xs-12">
             <img className="w-100" src="images/blog/Mask Group-2.jpg" alt="" />
             <h4 className="fs-18 mb-2 fw-bold mt-4">
-              BENEFITS OF USING A WOODEN HAIR BRUSH
+              BENEFITS OF USE WOODEN HAIR BRUSH
             </h4>
-            <p className="h6">
+            <p className="fw-light">
               Your hair is the crown you never take off so why not take good
               care of it and make it look as beautiful as possible? [...]
             </p>
@@ -34,7 +34,7 @@ const Blogs = () => {
             <h4 className="fs-18 mb-2 fw-bold mt-4">
               WAY TO REDUCE FOOD WASTE
             </h4>
-            <p className="h6">
+            <p className="fw-light">
               Every year, one third of all food produced for human consumption
               is wasted or lost - either before or during harvest [...]
             </p>
@@ -42,7 +42,7 @@ const Blogs = () => {
           <div className="col-xl-4 col-xs-12">
             <img className="w-100" src="images/blog/Mask Group-1.jpg" alt="" />
             <h4 className="fs-18 mb-2 fw-bold mt-4">HOMEMADE TEA BLENDS </h4>
-            <p className="h6">
+            <p className="fw-light">
               Fall is here and it got us feeling all the cozy vibes! Therefore,
               we want to share a few of our homemade tea blend recipes as making
               your [...]
@@ -53,7 +53,7 @@ const Blogs = () => {
             <h4 className="fs-18 mb-2 fw-bold mt-4">
               10 WAYS TO MAKE HOME SUSTAINABLE
             </h4>
-            <p className="h6">
+            <p className="fw-light">
               Making your home more energy and water efficient is one of the
               best ways you can have a positive impact on the environment so I
               [...]

@@ -111,7 +111,7 @@ const Home = () => {
                 <h4 className="fs-18 mb-2 fw-bold mt-4 text-dark">
                   10 WAYS TO BE MORE ECO-FRIENDLY
                 </h4>
-                <p className="h6 text-dark">
+                <p className="text-dark fw-light">
                   Sustainability is on everyone’s lips these days. Lots and lots
                   of people are striving to make more eco-conscious [...]
                 </p>
@@ -127,7 +127,7 @@ const Home = () => {
                 <h4 className="fs-18 mb-2 fw-bold mt-4 text-dark">
                   BENEFITS OF USING A WOODEN HAIR BRUSH
                 </h4>
-                <p className="h6 text-dark">
+                <p className="text-dark fw-light">
                   Your hair is the crown you never take off so why not take good
                   care of it and make it look as beautiful as possible? [...]
                 </p>
@@ -143,7 +143,7 @@ const Home = () => {
                 <h4 className="fs-18 mb-2 fw-bold mt-4 text-dark">
                   WAY TO REDUCE FOOD WASTE
                 </h4>
-                <p className="h6 text-dark">
+                <p className="fw-light text-dark">
                   Every year, one third of all food produced for human
                   consumption is wasted or lost - either before or during
                   harvest [...]

@@ -22,13 +22,13 @@ const ProductReduce = () => {
       </div>
       <div className="container product-detail-container ">
         {/* first section */}
-        <p className="fs-14 text-grey-3">HOME / BATHROOM / REDUCE PRODUCT</p>
+        <p className="fs-14 text-grey-3">HOME / KITCHEN / REDUCE PRODUCT</p>
         <div className="section-1 row gx-5">
           <div className="col-5">
             <div className="row mb-4">
               <div className="img-hover">
                 <img
-                  src="images/kitchen/image 1-1.png"
+                  src="images/reduce/image 1.png"
                   alt="detail"
                   className="w-100"
                   onMouseEnter={handleEnter}
@@ -48,30 +48,16 @@ const ProductReduce = () => {
               </div>
             </div>
             <div className="d-flex justify-content-between">
-              <img
-                src="images/kitchen/image 1-1.png"
-                alt="detail"
-                width={100}
-              />
-              <img
-                src="images/kitchen/image 1-2.png"
-                alt="detail"
-                width={100}
-              />
-              <img
-                src="images/kitchen/image 1-3.png"
-                alt="detail"
-                width={100}
-              />
-              <img
-                src="images/kitchen/image 1-4.png"
-                alt="detail"
-                width={100}
-              />
+              <img src="images/reduce/image 1.png" alt="detail" width={100} />
+              <img src="images/reduce/image 2.png" alt="detail" width={100} />
+              <img src="images/reduce/image 3.png" alt="detail" width={100} />
+              <img src="images/reduce/image 4.png" alt="detail" width={100} />
             </div>
           </div>
           <div className="col-7">
-            <h4 className="text-dark fw-bold mb-3">BAMBOO TOOTHBRUSH</h4>
+            <h4 className="text-dark fw-bold mb-3">
+              PETITE BASKET TEA STRAINER
+            </h4>
             <div className="d-flex justify-content-between stars">
               <svg
                 width="22"
@@ -134,13 +120,20 @@ const ProductReduce = () => {
                 />
               </svg>
             </div>
-            <p className="fs-4 fw-bold mt-3">$4.99</p>
+            <p className="fs-4 fw-bold mt-3">$12.00</p>
             <div className="row fw-light">
-              <div className="col-6">Material:</div>
-              <div className="col-6">Size: 19 cm (7.5 in)</div>
+              <div className="col-6">Basket Size:</div>
+              <div className="col-6">3/4″ deep x 2″ diameter</div>
             </div>
-            <p className="fw-light"> Handle: 100% natural bamboo</p>
-            <p className="fw-light"> Bristles: 100% BPA-free nylon</p>
+            <p className="fw-light"> Length with Handle: 6 1/8″</p>
+            <p className="fw-light">
+              {" "}
+              Designed to perch on the edge of your cup or mug as you pour tea
+              from a larger pot, this solid brass strainer will acquire a
+              delicate patina over time, an aesthetic documentation of its use
+              in your home. To keep the strainer clean, simply rinse and pat dry
+              after each use.
+            </p>
             <p className="fw-bold">Quantity</p>
             <Counter className="fs-4 fw-bold mx-3" />
             <div className="buy-group">
@@ -172,13 +165,11 @@ const ProductReduce = () => {
             <Col sm={7}>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
-                  Purified water, Organic aloe vera juice, Organic MSM
-                  (methylsulfonylmethane), blended coconut wax, Organic sweet
-                  almond oil, palm oil ester, vitamin C, vegetable glycerin,
-                  Organic flaxseed oil, borage oil, Organic arnica extract,
-                  Organic chamomile extract, Organic calendula extract, vitamin
-                  E, sodium levulinate, rose oil, Bulgarian lavender pure and
-                  natural essential oil blend
+                  Bellocq Tea Atelier, an inconspicuous jewel box tucked away
+                  into a quiet corner of Greenpoint, Brooklyn, has turned nearly
+                  a decade of sourcing and blending the finest teas and
+                  botanicals into a devoted and articulate history of tea
+                  connoisseurship.
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   Finally a bamboo toothbrush with different levels of

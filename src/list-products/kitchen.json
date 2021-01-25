@@ -1,57 +1,56 @@
 [
   {
     "imgSrc": "images/kitchen/image 1.png",
-    "title": "Nice kitchen stuff",
+    "title": "PETITE BASKET TEA STRAINER",
     "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-1.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Refill",
-    "price": "$20",
-    "type": "refill"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-2.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
+    "price": "$12.50"
   },
   {
     "imgSrc": "images/kitchen/image 1-3.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-4.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
-  },
-  {
-    "imgSrc": "images/kitchen/image 1-5.png",
-    "title": "Nice kitchen stuff",
-    "category": "Kitchen | Reduce",
-    "price": "$20"
+    "title": "TABLE BRUSH SET IN BEECH",
+    "category": "Kitchen | Refill",
+    "price": "$20.00"
   },
   {
     "imgSrc": "images/kitchen/image 1-6.png",
-    "title": "Nice kitchen stuff",
+    "title": "HAND-CARVED WOOD SPOONS",
     "category": "Kitchen | Reduce",
-    "price": "$20"
+    "price": "$10.00"
+  },
+  {
+    "imgSrc": "images/kitchen/image 1-1.png",
+    "title": "TALL TEAPOT",
+    "category": "Kitchen | Reduce",
+    "price": "$20.00"
+  },
+  {
+    "imgSrc": "images/kitchen/image 1-2.png",
+    "title": "ONYX METAL CONTAINERS",
+    "category": "Kitchen | Reduce",
+    "price": "$25.00"
+  },
+  {
+    "imgSrc": "images/kitchen/image 1-5.png",
+    "title": "TEAK ROOT MEASURING LADLES",
+    "category": "Kitchen | Reduce",
+    "price": "$15.00"
+  },
+  {
+    "imgSrc": "images/kitchen/image 1-4.png",
+    "title": "NICE KITCHEN STUFF",
+    "category": "Kitchen | Reduce",
+    "price": "$20.00"
   },
   {
     "imgSrc": "images/kitchen/image 1-7.png",
-    "title": "Nice kitchen stuff",
+    "title": "WOOD SOAP HOLDER",
     "category": "Kitchen | Reduce",
-    "price": "$20"
+    "price": "$8.00"
   },
   {
     "imgSrc": "images/kitchen/image 1-8.png",
-    "title": "Nice kitchen stuff",
+    "title": "CLEANING BRUSH - WHITE",
     "category": "Kitchen | Reduce",
-    "price": "$20"
+    "price": "$5.00 "
   }
 ]
