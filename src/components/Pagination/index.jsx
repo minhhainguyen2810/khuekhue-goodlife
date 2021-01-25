@@ -7,7 +7,7 @@ const Pagination = () => {
   let query = useQuery();
 
   return (
-    <nav className="pagination">
+    <nav className="pagination w-100">
       <ul className="pagination justify-content-center">
         <li className="page-item disabled">
           <Link to={`?page=1`} className={classNames("page-link border-0 q")}>
